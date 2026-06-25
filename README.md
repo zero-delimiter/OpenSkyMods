@@ -45,6 +45,30 @@ public void attachBaseContext(Context context) {
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 ```
 
+插入服务类：
+
+```xml
+<service
+    android:name="com.android.support.Launcher"
+    android:enabled="true"
+    android:exported="true"
+    android:stopWithTask="true"/>
+```
+
+开启调试模式：
+
+```xml
+<application
+        android:theme="@style/..."
+        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:name="..."
+        android:debuggable="true" <!-- 插入这个 -->
+        android:allowBackup="false"
+        android:fullBackupOnly="true"
+...
+```
+
 如果你要用开发者功能可能需要插入：
 
 ```xml
