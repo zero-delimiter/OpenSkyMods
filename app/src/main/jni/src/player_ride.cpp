@@ -15,21 +15,21 @@ namespace android_mod {
 namespace {
 
 constexpr const char *kBootloaderModule = "libBootloader.so";
-constexpr std::uintptr_t kPlayerChain0 = 0x0473D660;
+constexpr std::uintptr_t kPlayerChain0 = 0x0473E660;
 constexpr std::uintptr_t kPlayerChain1 = 0x8450;
 constexpr std::uintptr_t kPlayerBaseBias = 0x9FC0;
 constexpr std::uintptr_t kPlayerStride = 0x1260;
 
-constexpr std::uintptr_t kRideScanChain0 = 0x044C2710;
+constexpr std::uintptr_t kRideScanChain0 = 0x044C3710;
 constexpr std::uintptr_t kRideScanChain1 = 0x10;
 constexpr std::uintptr_t kRideScanCenter = 0x40;
 constexpr std::uintptr_t kRideSentinelOffset = 0x2C4;
 constexpr std::uintptr_t kRideTargetOffset = 0x248;
 constexpr std::uint64_t kPointerMask = 0x00FFFFFFFFFFFFFFULL;
 
-constexpr std::uintptr_t kPatchOffset0 = 0x01320050;
-constexpr std::uintptr_t kPatchOffset1 = 0x01320054;
-constexpr std::uintptr_t kPatchOffset2 = 0x01319BF8;
+constexpr std::uintptr_t kPatchOffset0 = 0x013215A8;
+constexpr std::uintptr_t kPatchOffset1 = 0x013215AC;
+constexpr std::uintptr_t kPatchOffset2 = 0x0131B150;
 constexpr std::uint32_t kPatchValue0 = 0x14000013;
 constexpr std::uint32_t kPatchValue1 = 0xD503201F;
 constexpr std::uint32_t kPatchValue2 = 0x52800020;

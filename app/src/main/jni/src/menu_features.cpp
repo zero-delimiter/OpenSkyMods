@@ -16,6 +16,7 @@ namespace {
 
 std::atomic_bool g_icon_requested{false}; // Original byte_37C004.
 std::atomic_bool g_game_lib_loaded{false};
+std::atomic_bool g_feature_10000_lightwing_route_enabled{false}; // Original byte_390534.
 
 std::mutex g_menu_refs_lock;
 MenuGlobalRefs g_menu_refs;
@@ -246,6 +247,14 @@ void markGameLibLoaded() {
     g_game_lib_loaded.store(true);
 }
 
+void setFeature10000LightwingRouteEnabled(bool enabled) {
+    g_feature_10000_lightwing_route_enabled.store(enabled);
+}
+
+bool feature10000LightwingRouteEnabled() {
+    return g_feature_10000_lightwing_route_enabled.load();
+}
+
 extern "C" jobjectArray JNICALL native_Menu_GetFeatureList(JNIEnv *env, jobject) {
     return featureArray(env, 0);
 }
@@ -334,4 +343,29 @@ extern "C" void JNICALL native_Menu_getLinearLayout(
     storeMenuGlobalRefs(env, scroll_view, linear_layout_1, linear_layout_2, linear_layout_3);
 }
 
+}
+
+// Feedback-email credential getters.
+//
+// In the target these are statically-linked JNI exports (Java_com_android_support_Menu_*),
+// distinct from the RegisterNatives table above. Each returns a runtime-decoded std::string
+// global (sub_150DE8 static initializer, XOR decoders sub_20268C/sub_2026D0/sub_202704).
+// Per project string policy the recovered plaintext is stored directly here; a shared
+// string/codec library can replace the literals later without changing behavior.
+extern "C" JNIEXPORT jstring JNICALL
+Java_com_android_support_Menu_getNativeSenderEmail(JNIEnv *env, jobject) {
+    static const std::string kSenderEmail = "3975683859@qq.com";
+    return android_mod::toJString(env, kSenderEmail);
+}
+
+extern "C" JNIEXPORT jstring JNICALL
+Java_com_android_support_Menu_getNativeAuthCode(JNIEnv *env, jobject) {
+    static const std::string kAuthCode = "dogiwvecivkkcdhf";
+    return android_mod::toJString(env, kAuthCode);
+}
+
+extern "C" JNIEXPORT jstring JNICALL
+Java_com_android_support_Menu_getNativeReceiverEmail(JNIEnv *env, jobject) {
+    static const std::string kReceiverEmail = "skyairen@foxmail.com";
+    return android_mod::toJString(env, kReceiverEmail);
 }

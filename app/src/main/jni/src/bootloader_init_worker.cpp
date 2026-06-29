@@ -14,9 +14,9 @@ namespace android_mod {
 namespace {
 
 constexpr const char *kBootloaderModule = "libBootloader.so";
-constexpr std::uintptr_t kPatchOffset580 = 0x04437B00; // qword_364580
-constexpr std::uintptr_t kPatchOffset5F8 = 0x048C6064; // qword_3645F8
-constexpr std::uintptr_t kPatchOffset600 = 0x044F4310; // qword_364600
+constexpr std::uintptr_t kPatchOffset580 = 0x04438B00; // qword_364580
+constexpr std::uintptr_t kPatchOffset5F8 = 0x048C70D4; // qword_3645F8
+constexpr std::uintptr_t kPatchOffset600 = 0x044F5310; // qword_364600
 
 bool selfMapsContainLibrary(const char *library_name) {
     if (library_name == nullptr || library_name[0] == '\0') {

@@ -70,7 +70,7 @@ public class AlGuiData {
     public static int getLiveStreamFlags() {
         if (getIsLiveStream()) {
             liveStreamFlags =
-                //  WindowManager.LayoutParams.FLAG_SECURE |//防截屏
+                WindowManager.LayoutParams.FLAG_SECURE |//防截屏
                 WindowManager.LayoutParams.FLAG_DITHER //抖动(防录屏)
                 |
                 WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED;//硬件加速

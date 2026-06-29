@@ -19,5 +19,7 @@ void storeMenuGlobalRefs(
     jobject linear_layout_2,
     jobject linear_layout_3);
 void markGameLibLoaded();
+void setFeature10000LightwingRouteEnabled(bool enabled);
+bool feature10000LightwingRouteEnabled();
 
 }

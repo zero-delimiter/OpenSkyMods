@@ -77,13 +77,13 @@ struct DragonEspCache {
 constexpr std::uint32_t kPatchCandleSpaceId = 0xD22C87DEu;
 constexpr const char *kDragonEspModule = "libBootloader.so";
 constexpr std::uintptr_t kDragonLivePositionChain[] = {
-    0x0473D660,
+    0x0473E660,
     0x7F18,
     0x1C68,
     0x0,
 };
 constexpr std::uintptr_t kDragonCandidateChain[] = {
-    0x0473D660,
+    0x0473E660,
     0x8158,
     0xB0,
 };
@@ -107,7 +107,7 @@ constexpr const char kDragonEspFormatToast[] =
     "\xE5\xB1\x8F\xE5\xB9\x95(%.0f,%.0f)";
 constexpr const char *kTaskTestModule = "libBootloader.so";
 constexpr std::uintptr_t kTaskTestPointerChain[] = {
-    0x47492C0,
+    0x0474A2C0,
     0x0,
     0x7D0,
     0x1C8,
@@ -781,7 +781,7 @@ HighValueActionResult setDragonEsp(bool enabled) {
     }
 
     logInfo(
-        "dragon ESP enabled; original feature=9010 target=0x1C09AC live_chain={473D660,7F18,1C68,0} candidate_chain={473D660,8158,B0} matrix_ptr=bootloader+4A1AAE0 record_cache=dword_3C8B10 count=dword_38570C stride=0x1C records=%zu",
+        "dragon ESP enabled; original feature=9010 target=0x1C09AC live_chain={473E660,7F18,1C68,0} candidate_chain={473E660,8158,B0} matrix_ptr=bootloader+4A1AAE0 record_cache=dword_3C8B10 count=dword_38570C stride=0x1C records=%zu",
         record_count);
     sendDragonDialogHintTimed(kDragonEspEnabledToast, 2.0f);
     return {true, true};

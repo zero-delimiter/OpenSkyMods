@@ -17,9 +17,18 @@ struct CandleRoute {
     std::size_t point_count;
 };
 
-const CandleRoute *findCandleRouteByLevelId(std::uint32_t level_id);
-const CandleRoutePoint *candleRoutePoints(const CandleRoute &route);
-std::size_t candleRouteCount();
-std::size_t candleRoutePointCount();
+enum class CandleRouteTable {
+    NoLightwing,
+    WithLightwing,
+};
+
+const CandleRoute *findCandleRouteByLevelId(
+    std::uint32_t level_id,
+    CandleRouteTable table = CandleRouteTable::NoLightwing);
+const CandleRoutePoint *candleRoutePoints(
+    const CandleRoute &route,
+    CandleRouteTable table = CandleRouteTable::NoLightwing);
+std::size_t candleRouteCount(CandleRouteTable table = CandleRouteTable::NoLightwing);
+std::size_t candleRoutePointCount(CandleRouteTable table = CandleRouteTable::NoLightwing);
 
 }

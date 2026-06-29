@@ -22,7 +22,7 @@ namespace {
 #endif
 
 constexpr const char *kPatchModule = "libBootloader.so";
-constexpr std::uintptr_t kPatchChain0 = 0x0473D660;
+constexpr std::uintptr_t kPatchChain0 = 0x0473E660;
 constexpr std::uintptr_t kPatchChain1 = 0x8208;
 constexpr std::uintptr_t kPatchChain2 = 0x1AC;
 constexpr std::uintptr_t kPointerMask = 0x00FFFFFFFFFFFFFFULL;

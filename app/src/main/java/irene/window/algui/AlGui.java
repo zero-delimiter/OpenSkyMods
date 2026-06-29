@@ -1009,6 +1009,7 @@ public class AlGui {
                                      if(isOn){
                                          //直播模式开启
                                          AlGuiData.setIsLiveStream(aContext,true);
+                                         com.android.support.Menu.setLiveStreamMode(true);
                                          //设置直播模式图标为直播开始图标
                                          liveStreamIcon.setImageBitmap(ImageTool.getBase64Image(AlGuiData.getVideo_Icon_LiveStart()));
                                          //liveStreamIcon.setImageTintList(ColorStateList.valueOf(0xFFBDBDBD)); //设置图标颜色
@@ -1030,6 +1031,7 @@ public class AlGui {
                                      }else{
                                          //直播模式结束
                                          AlGuiData.setIsLiveStream(aContext,false);
+                                         com.android.support.Menu.setLiveStreamMode(false);
                                          //设置直播模式图标为直播结束图标
                                          liveStreamIcon.setImageBitmap(ImageTool.getBase64Image(AlGuiData.getVideo_Icon_LiveEnd()));
                                          //liveStreamIcon.setImageTintList(ColorStateList.valueOf(0xFFBDBDBD)); //设置图标颜色

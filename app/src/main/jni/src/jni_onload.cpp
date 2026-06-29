@@ -4,6 +4,13 @@
 
 #include <string>
 
+// Feedback-email credential getters — statically-linked JNI exports defined in
+// menu_features.cpp (global scope, outside android_mod). The target registers these in
+// the Menu RegisterNatives table too (sub_1D9C34, 21 entries), so we mirror that here.
+extern "C" JNIEXPORT jstring JNICALL Java_com_android_support_Menu_getNativeSenderEmail(JNIEnv *, jobject);
+extern "C" JNIEXPORT jstring JNICALL Java_com_android_support_Menu_getNativeAuthCode(JNIEnv *, jobject);
+extern "C" JNIEXPORT jstring JNICALL Java_com_android_support_Menu_getNativeReceiverEmail(JNIEnv *, jobject);
+
 namespace android_mod {
 
 extern "C" jobjectArray JNICALL native_Menu_GetFeatureList(JNIEnv *, jobject);
@@ -61,6 +68,9 @@ JNINativeMethod kMenuMethods[] = {
     {"GetFeatureList8", "()[Ljava/lang/String;", reinterpret_cast<void *>(native_Menu_GetFeatureList8)},
     {"GetFeatureList9", "()[Ljava/lang/String;", reinterpret_cast<void *>(native_Menu_GetFeatureList9)},
     {"getLinearLayout", "(Landroid/widget/ScrollView;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;)V", reinterpret_cast<void *>(native_Menu_getLinearLayout)},
+    {"getNativeSenderEmail", "()Ljava/lang/String;", reinterpret_cast<void *>(Java_com_android_support_Menu_getNativeSenderEmail)},
+    {"getNativeAuthCode", "()Ljava/lang/String;", reinterpret_cast<void *>(Java_com_android_support_Menu_getNativeAuthCode)},
+    {"getNativeReceiverEmail", "()Ljava/lang/String;", reinterpret_cast<void *>(Java_com_android_support_Menu_getNativeReceiverEmail)},
 };
 
 JNINativeMethod kPreferenceMethods[] = {

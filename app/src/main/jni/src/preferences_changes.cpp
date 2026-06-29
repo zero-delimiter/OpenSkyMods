@@ -294,7 +294,7 @@ struct Feature701704Step {
     float z;
 };
 
-constexpr std::uint32_t kDefaultCaseTarget = 0x1CC564;
+constexpr std::uint32_t kDefaultCaseTarget = 0x1D1A38;
 constexpr const char *kBootloaderModule = "libBootloader.so";
 constexpr std::uintptr_t kPointerMask = 0x00FFFFFFFFFFFFFFULL;
 
@@ -309,164 +309,168 @@ constexpr std::uintptr_t kPointerMask = 0x00FFFFFFFFFFFFFFULL;
 #include "feature944_placeable_props.inc"
 
 constexpr BootloaderPatchWrite kFeature1Patch[] = {
-    {0x013891B4, 0x1E292800, 0x1E213800},
+    {0x0138A70C, 0x1E292800, 0x1E213800},
 };
 
 constexpr BootloaderPatchWrite kFeature2Patch[] = {
-    {0x00F7F778, 0x529F07E0, 0x1A9F07E0},
-    {0x01E3792C, 0xD503201F, 0x97C97CF7},
-    {0x028911B0, 0x529F07E0, 0xB9402B28},
+    {0x00F80BC8, 0x529F07E0, 0x1A9F07E0},
+    {0x01E38F9C, 0xD503201F, 0x97C97C6F},
+    {0x02892728, 0x529F07E0, 0xB9402B28},
 };
 
 constexpr BootloaderPatchWrite kFeature3Patch[] = {
-    {0x013ACAA0, 0x1E249000, 0x39608508},
-    {0x013ACAAC, 0x1E249000, 0xBD54CE60},
+    {0x013ADFF8, 0x1E249000, 0x39608508},
+    {0x013AE004, 0x1E249000, 0xBD54CE60},
 };
 
 constexpr BootloaderPatchWrite kFeature4Patch[] = {
-    {0x00610D24, 0xFFFFFFFF, 0x40600000},
+    {0x00610E64, 0xFFFFFFFF, 0x40600000},
 };
 
 constexpr BootloaderPatchWrite kFeature5Patch[] = {
-    {0x0194F174, 0x39030C08, 0x5400BFC0},
+    {0x019507E4, 0x39030C08, 0x5400BFC0},
 };
 
 constexpr BootloaderPatchWrite kFeature6Patch[] = {
-    {0x0178567C, 0x1E37F000, 0x1E217800},
+    {0x01786CEC, 0x1E37F000, 0x1E217800},
 };
 
 constexpr BootloaderPatchWrite kFeature7Patch[] = {
-    {0x0483F208, 0x00000001, 0x00000000},
+    {0x04840208, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature8Patch[] = {
-    {0x013885E0, 0x1E249000, 0x1E213800},
+    {0x01389B38, 0x1E249000, 0x1E213800},
 };
 
 constexpr BootloaderPatchWrite kFeature9Patch[] = {
-    {0x0130DB08, 0x1E251000, 0x34000128},
-    {0x0130DB10, 0xD503201F, 0x34000069},
+    {0x0130F060, 0x1E251000, 0x34000128},
+    {0x0130F068, 0xD503201F, 0x395856A9},
 };
 
 constexpr BootloaderPatchWrite kFeature10Patch[] = {
-    {0x02C7B208, 0xD65F03C0, 0x54004380},
+    {0x02C7C85C, 0xD65F03C0, 0x54004380},
 };
 
 constexpr BootloaderPatchWrite kFeature11Patch[] = {
-    {0x01CE12B4, 0xD503201F, 0x94004DAA},
+    {0x01CE2924, 0xD503201F, 0x94004DAA},
 };
 
 constexpr BootloaderPatchWrite kFeature12Patch[] = {
-    {0x02218898, 0x1E2703E1, 0x1E22B000},
+    {0x02219EAC, 0x1E2703E1, 0x1E22B000},
 };
 
 constexpr BootloaderPatchWrite kFeature13Patch[] = {
-    {0x013BA638, 0x1E214000, 0x1E249003},
+    {0x01F32988, 0xF9004AA2, 0xAD0482A2},
 };
 
 constexpr BootloaderPatchWrite kFeature14Patch[] = {
-    {0x01F31318, 0xF9004AA2, 0xAD0482A2},
+    {0x01616744, 0x52800000, 0x39406268},
 };
 
-constexpr BootloaderPatchWrite kFeature15Patch[] = {
-    {0x016151EC, 0x52800000, 0x39406268},
+constexpr BootloaderPatchWrite kFeature1028Patch[] = {
+    {0x044CA7F8, 0x00000000, 0x00000001},
+};
+
+constexpr BootloaderPatchWrite kFeature1031Patch[] = {
+    {0x013BBB90, 0x1E214000, 0x1E249003},
 };
 
 constexpr BootloaderPatchWrite kFeature303Patch[] = {
-    {0x04829430, 0x00000001, 0x00000000},
+    {0x0482A430, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature304Patch[] = {
-    {0x02435174, 0x528D6C7E, 0x528D6C69},
+    {0x024367D8, 0x528D6C7E, 0x528D6C69},
 };
 
 constexpr BootloaderPatchWrite kFeature305Patch[] = {
-    {0x00E5FD18, 0x71003C3F, 0x7100203F},
-    {0x00E5FDA8, 0x1400000C, 0x54000181},
+    {0x00E61088, 0x71003C3F, 0x7100203F},
+    {0x00E61118, 0x1400000C, 0x54000181},
 };
 
 constexpr BootloaderPatchWrite kFeature404Patch[] = {
-    {0x0450D0B4, 0x00000001, 0x00000000},
+    {0x0450E0B4, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature406Patch[] = {
-    {0x0176B200, 0x14000165, 0x34002CA8},
+    {0x0176C870, 0x14000165, 0x34002CA8},
 };
 
 constexpr BootloaderPatchWrite kFeature407Patch[] = {
-    {0x01335498, 0x1E249000, 0x7100011F},
+    {0x013369F0, 0x1E249000, 0x7100011F},
 };
 
 constexpr BootloaderPatchWrite kFeature408Patch[] = {
-    {0x013B6158, 0x1E249000, 0x1E200800},
+    {0x013B76B0, 0x1E249000, 0x1E200800},
 };
 
 constexpr BootloaderPatchWrite kFeature409Patch[] = {
-    {0x024E05F4, 0x1E249001, 0x1E221C21},
+    {0x024E1C58, 0x1E249001, 0x1E221C21},
 };
 
 constexpr BootloaderPatchWrite kFeature412Patch[] = {
-    {0x0482D820, 0x00000001, 0x00000000},
+    {0x0482E820, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature414Patch[] = {
-    {0x04847FD8, 0x00000001, 0x00000000},
+    {0x04848FD8, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature415Patch[] = {
-    {0x04847FEC, 0x00000001, 0x00000000},
+    {0x04848FEC, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature416Patch[] = {
-    {0x044C26F8, 0x00000001, 0x00000000},
+    {0x044C36F8, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature417Patch[] = {
-    {0x0138978C, 0x1E26D000, 0x1E224C00},
+    {0x0138ACE4, 0x1E26D000, 0x1E224C00},
 };
 
 constexpr BootloaderPatchWrite kFeature418Patch[] = {
-    {0x0221B900, 0x1E202800, 0x7100052A},
+    {0x0221CF64, 0x1E202800, 0x7100052A},
 };
 
 constexpr BootloaderPatchWrite kFeature419Patch[] = {
-    {0x01EAD888, 0xD503201F, 0x34FFEAE8},
+    {0x01EAEEF8, 0xD503201F, 0x34FFEAE8},
 };
 
 constexpr BootloaderPatchWrite kFeature421Patch[] = {
-    {0x044EC630, 0x00000001, 0x00000000},
+    {0x044ED630, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature422Patch[] = {
-    {0x048CC530, 0x00000001, 0x00000000},
+    {0x048CD5A0, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature423Patch[] = {
-    {0x0486B9A8, 0x00000001, 0x00000000},
+    {0x0486C9A8, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature902Patch[] = {
-    {0x047F41B8, 0x00000001, 0x00000000},
+    {0x047F51B8, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature903Patch[] = {
-    {0x044CF088, 0x00000001, 0x00000000},
+    {0x044D0088, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature904Patch[] = {
-    {0x044CF084, 0x00000001, 0x00000000},
+    {0x044D0084, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature919Patch[] = {
-    {0x02C67118, 0x1E27D002, 0xBD45BE62},
+    {0x02C6876C, 0x1E27D002, 0xBD45BE62},
 };
 
 constexpr BootloaderPatchWrite kFeature924Patch[] = {
-    {0x01405A2C, 0x52800088, 0x39504268},
+    {0x01406F84, 0x52800088, 0x39504268},
 };
 
 constexpr BootloaderPatchWrite kFeature428Patch[] = {
-    {0x019037EC, 0xD65F03C0, 0xA9BE7BFD},
+    {0x01904E5C, 0xD65F03C0, 0xA9BE7BFD},
 };
 
 constexpr BootloaderPatchWrite kFeature901Patch[] = {
@@ -474,240 +478,243 @@ constexpr BootloaderPatchWrite kFeature901Patch[] = {
 };
 
 constexpr BootloaderPatchWrite kFeature442Patch[] = {
-    {0x017463B4, 0xD503201F, 0xD63F0100},
+    {0x01747A24, 0xD503201F, 0xD63F0100},
 };
 
 constexpr BootloaderPatchWrite kFeature452Patch[] = {
-    {0x047F95F4, 0x00000001, 0x00000000},
+    {0x047FA5F4, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature611Patch[] = {
-    {0x0444B188, 0x00000001, 0x00000000},
+    {0x0444C108, 0x00000001, 0x00000000},
 };
 
 constexpr BootloaderPatchWrite kFeature601Patch[] = {
-    {0x018F9640, 0x17FFFDFA, 0x54FFBF45},
+    {0x018FACB0, 0x17FFFDFA, 0x54FFBF45},
 };
 
 constexpr BootloaderPatchWrite kFeature602Patch[] = {
-    {0x018FA97C, 0x1E65D000, 0x6EA0F821},
+    {0x018FBFEC, 0x1E65D000, 0x6EA0F821},
 };
 
 constexpr BootloaderPatchWrite kFeature603Patch[] = {
-    {0x018FBCB8, 0x1E65D000, 0x54000200},
+    {0x018FD328, 0x1E65D000, 0x54000200},
 };
 
 constexpr BootloaderPatchWrite kFeature604Patch[] = {
-    {0x02C6A82C, 0xD503201F, 0xBD05C260},
+    {0x02C6BE80, 0xD503201F, 0xBD05C260},
 };
 
 constexpr BootloaderPatchWrite kFeature605Patch[] = {
-    {0x015C970C, 0xD503201F, 0xB5FFFD17},
+    {0x015CAC64, 0xD503201F, 0xB5FFFD17},
 };
 
 constexpr BootloaderPatchWrite kFeature606Patch[] = {
-    {0x0353BBD8, 0x00000000, 0x00000001},
+    {0x0353CBD8, 0x00000000, 0x00000001},
 };
 
 constexpr BasicTogglePatchCase kBasicTogglePatchCases[] = {
-    {1, 0x1C0A0C, 0x38543C, kFeature1Patch, sizeof(kFeature1Patch) / sizeof(kFeature1Patch[0])},
-    {2, 0x1C10A8, 0x385440, kFeature2Patch, sizeof(kFeature2Patch) / sizeof(kFeature2Patch[0])},
-    {3, 0x1C0A74, 0x385444, kFeature3Patch, sizeof(kFeature3Patch) / sizeof(kFeature3Patch[0])},
-    {4, 0x1C5414, 0x385448, kFeature4Patch, sizeof(kFeature4Patch) / sizeof(kFeature4Patch[0])},
-    {5, 0x1C55AC, 0x38544C, kFeature5Patch, sizeof(kFeature5Patch) / sizeof(kFeature5Patch[0])},
-    {6, 0x1C55D8, 0x385450, kFeature6Patch, sizeof(kFeature6Patch) / sizeof(kFeature6Patch[0])},
-    {7, 0x1C2D80, 0x385454, kFeature7Patch, sizeof(kFeature7Patch) / sizeof(kFeature7Patch[0])},
-    {8, 0x1C1B50, 0x385458, kFeature8Patch, sizeof(kFeature8Patch) / sizeof(kFeature8Patch[0])},
-    {9, 0x1C3C84, 0x38545C, kFeature9Patch, sizeof(kFeature9Patch) / sizeof(kFeature9Patch[0])},
-    {10, 0x1C53D8, 0x385460, kFeature10Patch, sizeof(kFeature10Patch) / sizeof(kFeature10Patch[0])},
-    {11, 0x1C1634, 0x385464, kFeature11Patch, sizeof(kFeature11Patch) / sizeof(kFeature11Patch[0])},
-    {12, 0x1C15E4, 0x385468, kFeature12Patch, sizeof(kFeature12Patch) / sizeof(kFeature12Patch[0])},
-    {13, 0x1C0C7C, 0x38546C, kFeature13Patch, sizeof(kFeature13Patch) / sizeof(kFeature13Patch[0])},
-    {14, 0x1C0C50, 0x385470, kFeature14Patch, sizeof(kFeature14Patch) / sizeof(kFeature14Patch[0])},
-    {15, 0x1C54FC, 0x385474, kFeature15Patch, sizeof(kFeature15Patch) / sizeof(kFeature15Patch[0])},
-    {303, 0x1C4E8C, 0x3854FC, kFeature303Patch, sizeof(kFeature303Patch) / sizeof(kFeature303Patch[0])},
-    {304, 0x1C4E5C, 0x385500, kFeature304Patch, sizeof(kFeature304Patch) / sizeof(kFeature304Patch[0])},
-    {305, 0x1C0D10, 0x385504, kFeature305Patch, sizeof(kFeature305Patch) / sizeof(kFeature305Patch[0])},
-    {404, 0x1C1B88, 0x3854C4, kFeature404Patch, sizeof(kFeature404Patch) / sizeof(kFeature404Patch[0])},
-    {406, 0x1C181C, 0x3854C8, kFeature406Patch, sizeof(kFeature406Patch) / sizeof(kFeature406Patch[0])},
-    {407, 0x1C1550, 0x3854D0, kFeature407Patch, sizeof(kFeature407Patch) / sizeof(kFeature407Patch[0])},
-    {408, 0x1C0CB4, 0x3854D4, kFeature408Patch, sizeof(kFeature408Patch) / sizeof(kFeature408Patch[0])},
-    {409, 0x1C5580, 0x3854D8, kFeature409Patch, sizeof(kFeature409Patch) / sizeof(kFeature409Patch[0])},
-    {412, 0x1C4F50, 0x3854C0, kFeature412Patch, sizeof(kFeature412Patch) / sizeof(kFeature412Patch[0])},
-    {414, 0x1C14EC, 0x3854E0, kFeature414Patch, sizeof(kFeature414Patch) / sizeof(kFeature414Patch[0])},
-    {415, 0x1C1610, 0x3854E4, kFeature415Patch, sizeof(kFeature415Patch) / sizeof(kFeature415Patch[0])},
-    {416, 0x1C54D8, 0x3854E8, kFeature416Patch, sizeof(kFeature416Patch) / sizeof(kFeature416Patch[0])},
-    {417, 0x1C0F30, 0x3854F0, kFeature417Patch, sizeof(kFeature417Patch) / sizeof(kFeature417Patch[0])},
-    {418, 0x1C1660, 0x3854F4, kFeature418Patch, sizeof(kFeature418Patch) / sizeof(kFeature418Patch[0])},
-    {419, 0x1C17F0, 0x3854F8, kFeature419Patch, sizeof(kFeature419Patch) / sizeof(kFeature419Patch[0])},
-    {421, 0x1C30A8, 0x38547C, kFeature421Patch, sizeof(kFeature421Patch) / sizeof(kFeature421Patch[0])},
-    {422, 0x1C18B4, 0x385480, kFeature422Patch, sizeof(kFeature422Patch) / sizeof(kFeature422Patch[0])},
-    {423, 0x1C1BC8, 0x385484, kFeature423Patch, sizeof(kFeature423Patch) / sizeof(kFeature423Patch[0])},
-    {428, 0x1C4EB8, 0x3854AC, kFeature428Patch, sizeof(kFeature428Patch) / sizeof(kFeature428Patch[0])},
-    {442, 0x1C0F60, 0x3854CC, kFeature442Patch, sizeof(kFeature442Patch) / sizeof(kFeature442Patch[0])},
-    {452, 0x1C3D8C, 0x3854EC, kFeature452Patch, sizeof(kFeature452Patch) / sizeof(kFeature452Patch[0])},
-    {601, 0x1C11EC, 0x385488, kFeature601Patch, sizeof(kFeature601Patch) / sizeof(kFeature601Patch[0])},
-    {602, 0x1C1514, 0x38548C, kFeature602Patch, sizeof(kFeature602Patch) / sizeof(kFeature602Patch[0])},
-    {603, 0x1C1C8C, 0x385490, kFeature603Patch, sizeof(kFeature603Patch) / sizeof(kFeature603Patch[0])},
-    {604, 0x1C2060, 0x385494, kFeature604Patch, sizeof(kFeature604Patch) / sizeof(kFeature604Patch[0])},
-    {605, 0x1C15B8, 0x385498, kFeature605Patch, sizeof(kFeature605Patch) / sizeof(kFeature605Patch[0])},
-    {606, 0x1C1728, 0x3854A4, kFeature606Patch, sizeof(kFeature606Patch) / sizeof(kFeature606Patch[0])},
-    {611, 0x1C4DD0, 0x38549C, kFeature611Patch, sizeof(kFeature611Patch) / sizeof(kFeature611Patch[0])},
-    {902, 0x1C4884, 0x385518, kFeature902Patch, sizeof(kFeature902Patch) / sizeof(kFeature902Patch[0])},
-    {903, 0x1C4748, 0x38550C, kFeature903Patch, sizeof(kFeature903Patch) / sizeof(kFeature903Patch[0])},
-    {904, 0x1C2034, 0x385510, kFeature904Patch, sizeof(kFeature904Patch) / sizeof(kFeature904Patch[0])},
-    {901, 0x1C20BC, 0x385508, kFeature901Patch, sizeof(kFeature901Patch) / sizeof(kFeature901Patch[0])},
-    {919, 0x1C4A10, 0x38551C, kFeature919Patch, sizeof(kFeature919Patch) / sizeof(kFeature919Patch[0])},
-    {924, 0x1C2090, 0x385514, kFeature924Patch, sizeof(kFeature924Patch) / sizeof(kFeature924Patch[0])},
+    {1, 0x1C58F0, 0x39037C, kFeature1Patch, sizeof(kFeature1Patch) / sizeof(kFeature1Patch[0])},
+    {2, 0x1CA708, 0x390380, kFeature2Patch, sizeof(kFeature2Patch) / sizeof(kFeature2Patch[0])},
+    {3, 0x1C74C4, 0x390384, kFeature3Patch, sizeof(kFeature3Patch) / sizeof(kFeature3Patch[0])},
+    {4, 0x1CA2F4, 0x390388, kFeature4Patch, sizeof(kFeature4Patch) / sizeof(kFeature4Patch[0])},
+    {5, 0x1C5944, 0x39038C, kFeature5Patch, sizeof(kFeature5Patch) / sizeof(kFeature5Patch[0])},
+    {6, 0x1C818C, 0x390390, kFeature6Patch, sizeof(kFeature6Patch) / sizeof(kFeature6Patch[0])},
+    {7, 0x1C87C8, 0x390394, kFeature7Patch, sizeof(kFeature7Patch) / sizeof(kFeature7Patch[0])},
+    {8, 0x1C7C24, 0x390398, kFeature8Patch, sizeof(kFeature8Patch) / sizeof(kFeature8Patch[0])},
+    {9, 0x1CA6C4, 0x39039C, kFeature9Patch, sizeof(kFeature9Patch) / sizeof(kFeature9Patch[0])},
+    {10, 0x1C640C, 0x3903A0, kFeature10Patch, sizeof(kFeature10Patch) / sizeof(kFeature10Patch[0])},
+    {11, 0x1C6A08, 0x3903A4, kFeature11Patch, sizeof(kFeature11Patch) / sizeof(kFeature11Patch[0])},
+    {12, 0x1CA640, 0x3903A8, kFeature12Patch, sizeof(kFeature12Patch) / sizeof(kFeature12Patch[0])},
+    {13, 0x1C879C, 0x3903B0, kFeature13Patch, sizeof(kFeature13Patch) / sizeof(kFeature13Patch[0])},
+    {14, 0x1C5F04, 0x3903B4, kFeature14Patch, sizeof(kFeature14Patch) / sizeof(kFeature14Patch[0])},
+    {1028, 0x1C7B84, 0x390400, kFeature1028Patch, sizeof(kFeature1028Patch) / sizeof(kFeature1028Patch[0])},
+    {1031, 0x1C7BF8, 0x3903AC, kFeature1031Patch, sizeof(kFeature1031Patch) / sizeof(kFeature1031Patch[0])},
+    {303, 0x1C6438, 0x390444, kFeature303Patch, sizeof(kFeature303Patch) / sizeof(kFeature303Patch[0])},
+    {304, 0x1C5BAC, 0x390448, kFeature304Patch, sizeof(kFeature304Patch) / sizeof(kFeature304Patch[0])},
+    {305, 0x1C5B68, 0x39044C, kFeature305Patch, sizeof(kFeature305Patch) / sizeof(kFeature305Patch[0])},
+    {404, 0x1C7BAC, 0x39040C, kFeature404Patch, sizeof(kFeature404Patch) / sizeof(kFeature404Patch[0])},
+    {406, 0x1C61A0, 0x390410, kFeature406Patch, sizeof(kFeature406Patch) / sizeof(kFeature406Patch[0])},
+    {407, 0x1CA178, 0x390418, kFeature407Patch, sizeof(kFeature407Patch) / sizeof(kFeature407Patch[0])},
+    {408, 0x1C5E6C, 0x39041C, kFeature408Patch, sizeof(kFeature408Patch) / sizeof(kFeature408Patch[0])},
+    {409, 0x1C5B3C, 0x390420, kFeature409Patch, sizeof(kFeature409Patch) / sizeof(kFeature409Patch[0])},
+    {412, 0x1C6850, 0x390408, kFeature412Patch, sizeof(kFeature412Patch) / sizeof(kFeature412Patch[0])},
+    {414, 0x1C5DCC, 0x390428, kFeature414Patch, sizeof(kFeature414Patch) / sizeof(kFeature414Patch[0])},
+    {415, 0x1C948C, 0x39042C, kFeature415Patch, sizeof(kFeature415Patch) / sizeof(kFeature415Patch[0])},
+    {416, 0x1C8878, 0x390430, kFeature416Patch, sizeof(kFeature416Patch) / sizeof(kFeature416Patch[0])},
+    {417, 0x1C9E7C, 0x390438, kFeature417Patch, sizeof(kFeature417Patch) / sizeof(kFeature417Patch[0])},
+    {418, 0x1C8820, 0x39043C, kFeature418Patch, sizeof(kFeature418Patch) / sizeof(kFeature418Patch[0])},
+    {419, 0x1C6A8C, 0x390440, kFeature419Patch, sizeof(kFeature419Patch) / sizeof(kFeature419Patch[0])},
+    {421, 0x1C671C, 0x3903C0, kFeature421Patch, sizeof(kFeature421Patch) / sizeof(kFeature421Patch[0])},
+    {422, 0x1C62D4, 0x3903C4, kFeature422Patch, sizeof(kFeature422Patch) / sizeof(kFeature422Patch[0])},
+    {423, 0x1C5BEC, 0x3903C8, kFeature423Patch, sizeof(kFeature423Patch) / sizeof(kFeature423Patch[0])},
+    {428, 0x1C6A60, 0x3903F0, kFeature428Patch, sizeof(kFeature428Patch) / sizeof(kFeature428Patch[0])},
+    {442, 0x1C5FE4, 0x390414, kFeature442Patch, sizeof(kFeature442Patch) / sizeof(kFeature442Patch[0])},
+    {452, 0x1C6AEC, 0x390434, kFeature452Patch, sizeof(kFeature452Patch) / sizeof(kFeature452Patch[0])},
+    {601, 0x1C94B0, 0x3903CC, kFeature601Patch, sizeof(kFeature601Patch) / sizeof(kFeature601Patch[0])},
+    {602, 0x1C5E40, 0x3903D0, kFeature602Patch, sizeof(kFeature602Patch) / sizeof(kFeature602Patch[0])},
+    {603, 0x1C609C, 0x3903D4, kFeature603Patch, sizeof(kFeature603Patch) / sizeof(kFeature603Patch[0])},
+    {604, 0x1C79A4, 0x3903D8, kFeature604Patch, sizeof(kFeature604Patch) / sizeof(kFeature604Patch[0])},
+    {605, 0x1C6644, 0x3903DC, kFeature605Patch, sizeof(kFeature605Patch) / sizeof(kFeature605Patch[0])},
+    {606, 0x1C8D28, 0x3903E8, kFeature606Patch, sizeof(kFeature606Patch) / sizeof(kFeature606Patch[0])},
+    {611, 0x1C6AC8, 0x3903E0, kFeature611Patch, sizeof(kFeature611Patch) / sizeof(kFeature611Patch[0])},
+    {902, 0x1C7364, 0x390460, kFeature902Patch, sizeof(kFeature902Patch) / sizeof(kFeature902Patch[0])},
+    {903, 0x1C98A0, 0x390454, kFeature903Patch, sizeof(kFeature903Patch) / sizeof(kFeature903Patch[0])},
+    {904, 0x1C749C, 0x390458, kFeature904Patch, sizeof(kFeature904Patch) / sizeof(kFeature904Patch[0])},
+    {901, 0x1C66E4, 0x390450, kFeature901Patch, sizeof(kFeature901Patch) / sizeof(kFeature901Patch[0])},
+    {919, 0x1C6B28, 0x390464, kFeature919Patch, sizeof(kFeature919Patch) / sizeof(kFeature919Patch[0])},
+    {924, 0x1C83C8, 0x39045C, kFeature924Patch, sizeof(kFeature924Patch) / sizeof(kFeature924Patch[0])},
 };
 
 constexpr BootloaderFloatSeekbarCase kBootloaderFloatSeekbarCases[] = {
-    {413, 0x1C1B7C, 0x035D2C54, 0x364548},
-    {612, 0x1C4FB4, 0x033F5B8C, 0x364568},
-    {613, 0x1C324C, 0x0444B118, 0x3645F0},
-    {614, 0x1C4EE4, 0x033F5B90, 0x364568},
-    {615, 0x1C171C, 0x033F5B78, 0x364568},
-    {616, 0x1C4D94, 0x033F5B7C, 0x364568},
-    {617, 0x1C328C, 0x033F5B84, 0x364568},
-    {618, 0x1C18D8, 0x033F5B88, 0x364568},
-    {619, 0x1C323C, 0x033F5B98, 0x364568},
-    {621, 0x1C4E30, 0x048D3E04, 0x3645E0},
-    {622, 0x1C4E3C, 0x048D3E08, 0x3645E0},
-    {623, 0x1C1AD4, 0x048D3E0C, 0x3645E0},
-    {624, 0x1C4B30, 0x035C7A84, 0x364550},
-    {625, 0x1C400C, 0x035C7A88, 0x364550},
-    {626, 0x1C3DB0, 0x035C7A90, 0x364550},
-    {627, 0x1C1434, 0x035C7A94, 0x364550},
+    {413, 0x1C7598, 0x035D3C54, 0x36E568},
+    {612, 0x1C6B1C, 0x033F6B8C, 0x36E588},
+    {613, 0x1C8D54, 0x0444C118, 0x36E618},
+    {614, 0x1C91E8, 0x033F6B90, 0x36E588},
+    {615, 0x1C6010, 0x033F6B78, 0x36E588},
+    {616, 0x1C61E4, 0x033F6B7C, 0x36E588},
+    {617, 0x1C6B10, 0x033F6B84, 0x36E588},
+    {618, 0x1C6F9C, 0x033F6B88, 0x36E588},
+    {619, 0x1C63FC, 0x033F6B98, 0x36E588},
+    {621, 0x1C9694, 0x048D4E44, 0x36E608},
+    {622, 0x1C9848, 0x048D4E48, 0x36E608},
+    {623, 0x1C69F8, 0x048D4E4C, 0x36E608},
+    {624, 0x1C9884, 0x035C8A84, 0x36E570},
+    {625, 0x1C99DC, 0x035C8A88, 0x36E570},
+    {626, 0x1CA034, 0x035C8A90, 0x36E570},
+    {627, 0x1C828C, 0x035C8A94, 0x36E570},
 };
 
 constexpr BootloaderScaledIntCase kBootloaderScaledIntCases[] = {
-    {425, 0x1C11B8, 0x00614BE0, 0x364570, 0.8},
-    {426, 0x1C21BC, 0x00614BE4, 0x364570, 0.8},
-    {427, 0x1C11D0, 0x00614BE8, 0x364570, 0.8},
+    {425, 0x1CA4A8, 0x00614D20, 0x36E590, 0.8},
+    {426, 0x1CA5EC, 0x00614D24, 0x36E590, 0.8},
+    {427, 0x1C9EAC, 0x00614D28, 0x36E590, 0.8},
 };
 
 constexpr BootloaderDirectIntCase kBootloaderDirectIntCases[] = {
-    {628, 0x1C157C, 0x035C7A98, 0x364550},
+    {628, 0x1C9DF4, 0x035C8A98, 0x36E570},
 };
 
 constexpr BootloaderBoolProcIntCase kBootloaderBoolProcIntCases[] = {
-    {424, 0x1C30CC, 0x00614BEC, 0x3854A8, 0x364570, 0, 1, 0x10},
+    {424, 0x1CA614, 0x00614D2C, 0x3903EC, 0x36E590, 0, 1, 0x10},
 };
 
 constexpr std::uintptr_t kFeature608CloudChain[] = {
-    0x0473D660, 0x8040, 0x50, 0x10,
+    0x0473E660, 0x8040, 0x50, 0x10,
 };
 
 constexpr std::uintptr_t kFeature410SpeedWeightChain[] = {
-    0x0484B550, 0x28,
+    0x0484C550, 0x28,
 };
 
 constexpr std::uintptr_t kFeature630TextChain[] = {
-    0x044C2710, 0x8, 0x8D0, 0xEF88,
+    0x044C3710, 0x8, 0x8D0, 0xEF88,
 };
 
 constexpr std::uintptr_t kFeature630TriggerChain[] = {
-    0x044C2710, 0x10, 0x108, 0x20,
+    0x044C3710, 0x10, 0x108, 0x20,
 };
 
 constexpr std::uintptr_t kFeature321322FriendListChain[] = {
-    0x044C2710, 0x8, 0x7C8, 0x1C0,
+    0x044C3710, 0x8, 0x7E0, 0x1C0,
 };
 
 constexpr std::uintptr_t kFeature321322EventSlotChain[] = {
-    0x0473D660, 0x7ED0, 0x10,
+    0x0473E660, 0x7ED0, 0x10,
 };
 
 constexpr std::uintptr_t kFeature322PendingListChain[] = {
-    0x044C2710, 0x8, 0x898, 0xB9C8,
+    0x044C3710, 0x8, 0x898, 0xB9C8,
 };
 
 constexpr std::uintptr_t kFeature321322SubmitChain[] = {
-    0x0473D660, 0x7EB8, 0x2005E8,
+    0x0473E660, 0x7EB8, 0x2005E8,
 };
 
 constexpr std::uintptr_t kFeature505SizeChain[] = {
-    0x044C2710, 0x8, 0x968, 0x64,
+    0x044C3710, 0x8, 0x968, 0x64,
 };
 
 constexpr std::uintptr_t kFeature506SizeTargetChain[] = {
-    0x044C2710, 0x10, 0xC8, 0x1E40,
+    0x044C3710, 0x10, 0xC8, 0x1E40,
 };
 
 constexpr std::uintptr_t kFeature507WardrobeChain[] = {
-    0x0473D660, 0x7FB0, 0x50F0,
+    0x0473E660, 0x7FB0, 0x50F0,
 };
 
 constexpr std::uintptr_t kFeature629GateChain[] = {
-    0x0473D660, 0x8520, 0x630,
+    0x0473E660, 0x8520, 0x630,
 };
 
 constexpr std::uintptr_t kFeature309MapRouteChain[] = {
-    0x0473D660, 0x8520, 0x630,
+    0x0473E660, 0x8520, 0x630,
 };
 
 constexpr std::uintptr_t kCurrentLevelIdChain[] = {
-    0x0473D660, 0x8520, 0x630,
+    0x0473E660, 0x8520, 0x630,
 };
 
 constexpr std::uintptr_t kDragonTargetChain[] = {
-    0x0473D660, 0x8158, 0xB0,
+    0x0473E660, 0x8158, 0xB0,
 };
 
 constexpr std::uintptr_t kAvatarPositionChain[] = {
-    0x0473D660, 0x7F18, 0x1C68, 0,
+    0x0473E660, 0x7F18, 0x1C68, 0,
 };
 
 constexpr std::uintptr_t kFeature302CandleSlotChain[] = {
-    0x0473D660, 0x83D8, 0x88,
+    0x0473E660, 0x83D8, 0x88,
 };
 
 constexpr std::uintptr_t kFeature316317WingListChain[] = {
-    0x0473D660, 0x83B0, 0xA0,
+    0x0473E660, 0x83B8, 0xA0,
 };
 
 constexpr std::uintptr_t kFeature443PlaceableListChain[] = {
-    0x0473D660, 0x81B8, 0x10,
+    0x0473E660, 0x81B8, 0x10,
 };
 
 constexpr std::uintptr_t kFeature801ZeroSlotsChain[] = {
-    0x0473D660, 0x85E0, 0x092C,
+    0x0473E660, 0x85E0, 0x092C,
 };
 
 constexpr std::uintptr_t kFeature802WardrobeFlagChain[] = {
-    0x0473D660, 0x0308, 0xEB90,
+    0x0473E660, 0x0308, 0xEB90,
 };
 
 constexpr std::uintptr_t kFeature420ControlBlockChain[] = {
-    0x044C2710, 0x60, 0x48, 0x5C,
+    0x044C3710, 0x60, 0x48, 0x5C,
 };
 
 constexpr std::uintptr_t kFeature508SpellShopChain[] = {
-    0x044C2710, 0x60, 0xF0, 0x18,
+    0x044C3710, 0x60, 0xF0, 0x18,
 };
 
 constexpr std::uintptr_t kFeature804811PatchPayloadChain[] = {
-    0x0473D660, 0x7D78, 0x398,
+    0x0473E660, 0x7D78, 0x398,
 };
 
 constexpr std::uintptr_t kFeature1020PatternChain[] = {
-    0x044C2710, 0x60, 0x30, 0x18,
+    0x044C3710, 0x60, 0x30, 0x18,
 };
 
+constexpr std::size_t kFeature1020PatternCount = 35;
+
 constexpr std::uintptr_t kFeature431WingSlotChain[] = {
-    0x0473D660, 0x83B8, 0x8ED8, 0xD4,
+    0x0473E660, 0x83B8, 0x8ED8, 0xD4,
 };
 
 constexpr std::uintptr_t kFeature431WingSearchChain[] = {
-    0x0473D660, 0x8400, 0x40, 0,
+    0x0473E660, 0x8400, 0x40, 0,
 };
 
 constexpr std::uintptr_t kDailyQuestTaskChain[] = {
-    0x047492C0, 0, 0x7D0, 0x1C8, 0,
+    0x0474A2C0, 0, 0x7D0, 0x1C8, 0,
 };
 
 constexpr std::uintptr_t kDailyQuestStatsChain[] = {
-    0x0473D660, 0x7FA0, 0x20,
+    0x0473E660, 0x7FA0, 0x20,
 };
 
 constexpr std::uintptr_t kDailyQuestCompletedSlotOffset = 0xCE8;   // qword_364660
@@ -720,10 +727,10 @@ constexpr int kDailyQuestStateFlagValue = 4;
 constexpr std::uintptr_t kLoginSuccessPatchOffset510 = 0x0128E748; // qword_364510
 constexpr std::uintptr_t kLoginSuccessPatchOffset528 = 0x0208AEF4; // qword_364528
 constexpr std::uintptr_t kLoginSuccessPatchOffset4B8 = 0x0222E67C; // qword_3644B8
-constexpr std::uintptr_t kLoginSuccessPatchOffset580 = 0x04437B00; // qword_364580
-constexpr std::uintptr_t kLoginSuccessPatchOffset5F8 = 0x048C6064; // qword_3645F8
-constexpr std::uintptr_t kLoginSuccessPatchOffset600 = 0x044F4310; // qword_364600
-constexpr std::uintptr_t kLoginSuccessPatchOffset608 = 0x04505404; // qword_364608
+constexpr std::uintptr_t kLoginSuccessPatchOffset580 = 0x04438B00; // qword_364580
+constexpr std::uintptr_t kLoginSuccessPatchOffset5F8 = 0x048C70D4; // qword_3645F8
+constexpr std::uintptr_t kLoginSuccessPatchOffset600 = 0x044F5310; // qword_364600
+constexpr std::uintptr_t kLoginSuccessPatchOffset608 = 0x04506404; // qword_364608
 constexpr std::uintptr_t kLoginSuccessPatchLoopBase = 0x00E70D28;  // qword_364518
 constexpr int kLoginSuccessPatchLoopCount = 39;
 constexpr const char *kNoticeUploadSourceDir = "/storage/emulated/0/";          // qword_3BABA0
@@ -750,7 +757,7 @@ constexpr std::uintptr_t kFeature316317WingCountOffset = 0xE70; // qword_364708
 constexpr std::uintptr_t kFeature316317WingStride = 0x140;      // qword_364710
 constexpr std::uintptr_t kFeature316WingCoordBias = 0x30;
 constexpr std::uintptr_t kFeature317WingButtonCoordBackstep = 0x50;
-constexpr std::uintptr_t kFeature309InstructionOffset = 0x01CF02DC; // qword_364498
+constexpr std::uintptr_t kFeature309InstructionOffset = 0x01CF0D4C; // qword_36E4B8
 constexpr std::uint32_t kFeature309InstructionStart = 1384120320u;
 constexpr std::uint32_t kFeature309InstructionRestore = 922747112u;
 constexpr std::uintptr_t kFeature309RouteDataOffset = 36;
@@ -983,9 +990,9 @@ constexpr const char *kFeature312ResidentRevisitPayloads[] = {
 
 constexpr std::size_t kFeature313PayloadLength = 0x18;
 constexpr int kFeature313EventSlotIndex = 0x22; // qword_3643C8
-constexpr std::uintptr_t kFeature313OfflineWingStateOffset = 0x0359ED30; // qword_364558
+constexpr std::uintptr_t kFeature313OfflineWingStateOffset = 0x0359FD30; // qword_364558
 
-constexpr std::uintptr_t kFeature315SacrificeInstructionOffset = 0x02C9E514;
+constexpr std::uintptr_t kFeature315SacrificeInstructionOffset = 0x02C79F58;
 constexpr std::uint32_t kFeature315SacrificeInstructionEnabled = 0x52800048;
 constexpr std::uint32_t kFeature315SacrificeInstructionRestored = 0xB9407268;
 
@@ -1405,132 +1412,217 @@ constexpr DailyQuestLocalMapping kDailyQuestLocalMappings[] = {
 using Feature1020Pattern = std::array<std::uint8_t, 48>;
 
 constexpr Feature1020Pattern kFeature1020Patterns[] = {
-    { // 1: .WindSparticles / 粒子
-        0x2E, 0x57, 0x69, 0x6E, 0x64, 0x53, 0x70, 0x61, 0x72, 0x74, 0x69, 0x63, 0x6C, 0x65, 0x73, 0x00,
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0xE7, 0xB2, 0x92, 0xE5, 0xAD, 0x90, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 2: .FireworkSmall / 水珠
-        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x53, 0x6D, 0x61, 0x6C, 0x6C, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0xB0, 0xB4, 0xE7, 0x8F, 0xA0, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72,
-    },
-    { // 3: .FireworkExplode / 烟花爆炸
-        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x45, 0x78, 0x70, 0x6C, 0x6F, 0x64, 0x65,
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0xE7, 0x83, 0x9F, 0xE8, 0x8A, 0xB1, 0xE7, 0x88, 0x86, 0xE7, 0x82, 0xB8, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 4: .Firework / 暗黑红
-        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0x9A, 0x97, 0xE9, 0xBB, 0x91, 0xE7, 0xBA,
-        0xA2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 5: .FireworkTrail / 暗黑红2
-        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x54, 0x72, 0x61, 0x69, 0x6C, 0x00, 0x00,
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0xE6, 0x9A, 0x97, 0xE9, 0xBB, 0x91, 0xE7, 0xBA, 0xA2, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 6: .FireworkRing / 暗黑白
-        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x52, 0x69, 0x6E, 0x67, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0x9A, 0x97, 0xE9, 0xBB, 0x91, 0xE7, 0x99,
-        0xBD, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 7: .FireworkSpark / 暗黑白2
-        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x53, 0x70, 0x61, 0x72, 0x6B, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0x9A, 0x97, 0xE9, 0xBB, 0x91, 0xE7, 0x99,
-        0xBD, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 8: .WindSparklesSm / 粒子掉落
-        0x2E, 0x57, 0x69, 0x6E, 0x64, 0x53, 0x70, 0x61, 0x72, 0x6B, 0x6C, 0x65, 0x73, 0x53, 0x6D, 0x00,
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0xE7, 0xB2, 0x92, 0xE5, 0xAD, 0x90, 0xE6, 0x8E, 0x89, 0xE8, 0x90, 0xBD, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 9: .WindWindSm / 粒子集聚
-        0x2E, 0x57, 0x69, 0x6E, 0x64, 0x57, 0x69, 0x6E, 0x64, 0x53, 0x6D, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0xB2, 0x92, 0xE5, 0xAD, 0x90, 0xE9, 0x9B,
-        0x86, 0xE8, 0x81, 0x9A, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 10: .DarkExplode / 暗黑爆炸
-        0x2E, 0x44, 0x61, 0x72, 0x6B, 0x45, 0x78, 0x70, 0x6C, 0x6F, 0x64, 0x65, 0x00, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xBB, 0x91, 0xE6, 0x9A, 0x97, 0xE7, 0x88,
-        0x86, 0xE7, 0x82, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 11: .TornadoDebris / 龙卷碎屑
-        0x2E, 0x54, 0x6F, 0x72, 0x6E, 0x61, 0x64, 0x6F, 0x44, 0x65, 0x62, 0x72, 0x69, 0x73, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xBE, 0x99, 0xE5, 0x8D, 0xB7, 0xE7, 0xA2,
-        0x8E, 0xE5, 0xB1, 0x91, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 12: .StormDebris / 风暴碎屑
-        0x2E, 0x53, 0x74, 0x6F, 0x72, 0x6D, 0x44, 0x65, 0x62, 0x72, 0x69, 0x73, 0x00, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xA3, 0x8E, 0xE6, 0x9A, 0xB4, 0xE7, 0xA2,
-        0x8E, 0xE5, 0xB1, 0x91, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 13: .TornadoDust / 龙卷尘
-        0x2E, 0x54, 0x6F, 0x72, 0x6E, 0x61, 0x64, 0x6F, 0x44, 0x75, 0x73, 0x74, 0x00, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xBE, 0x99, 0xE5, 0x8D, 0xB7, 0xE5, 0xB0,
-        0x98, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 14: .N_crabMesh03 / 螃蟹图案
-        0x2E, 0x4E, 0x5F, 0x63, 0x72, 0x61, 0x62, 0x4D, 0x65, 0x73, 0x68, 0x30, 0x33, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE8, 0x9E, 0x83, 0xE8, 0x9F, 0xB9, 0xE5, 0x9B,
-        0xBE, 0xE6, 0xA1, 0x88, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 15: .N_mantaMesh / 遥鲲图案
-        0x2E, 0x4E, 0x5F, 0x6D, 0x61, 0x6E, 0x74, 0x61, 0x4D, 0x65, 0x73, 0x68, 0x00, 0x00, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0x81, 0xA5, 0xE9, 0xB2, 0xB2, 0xE5, 0x9B,
-        0xBE, 0xE6, 0xA1, 0x88, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 16: .N_pendantAP16 / 欧若拉图案
-        0x2E, 0x4E, 0x5F, 0x70, 0x65, 0x6E, 0x64, 0x61, 0x6E, 0x74, 0x41, 0x50, 0x31, 0x36, 0x00, 0x00,
-        0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0xAC, 0xA7, 0xE8, 0x8B, 0xA5, 0xE6, 0x8B,
-        0x89, 0xE5, 0x9B, 0xBE, 0xE6, 0xA1, 0x88, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    },
-    { // 17: .StewardScepter / 烟火节图案
-        0x2E, 0x53, 0x74, 0x65, 0x77, 0x61, 0x72, 0x64, 0x53, 0x63, 0x65, 0x70, 0x74, 0x65, 0x72, 0x00,
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0xE7, 0x83, 0x9F, 0xE7, 0x81, 0xAB, 0xE8, 0x8A, 0x82, 0xE5, 0x9B, 0xBE, 0xE6, 0xA1, 0x88, 0x00,
-    },
-    { // 18: UILogo, wrapper-visible but not listed by the recovered 1020 feature string.
-        0x55, 0x49, 0x4C, 0x6F, 0x67, 0x6F, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0xE9, 0xBB, 0x98, 0xE8, 0xAE, 0xA4, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    { // 1: .MemoryBookStars / 记忆星辰
+        0x2E, 0x4D, 0x65, 0x6D, 0x6F, 0x72, 0x79, 0x42, 0x6F, 0x6F, 0x6B, 0x53, 0x74, 0x61, 0x72, 0x73,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0xE8, 0xAE, 0xB0, 0xE5, 0xBF, 0x86, 0xE6, 0x98, 0x9F, 0xE8, 0xBE, 0xB0, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 2: .WindSparticles / 风之粒子
+        0x2E, 0x57, 0x69, 0x6E, 0x64, 0x53, 0x70, 0x61, 0x72, 0x74, 0x69, 0x63, 0x6C, 0x65, 0x73, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0xE9, 0xA3, 0x8E, 0xE4, 0xB9, 0x8B, 0xE7, 0xB2, 0x92, 0xE5, 0xAD, 0x90, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 3: .SoulPortal / 灵魂之门
+        0x2E, 0x53, 0x6F, 0x75, 0x6C, 0x50, 0x6F, 0x72, 0x74, 0x61, 0x6C, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0x81, 0xB5, 0xE9, 0xAD, 0x82, 0xE4, 0xB9,
+        0x8B, 0xE9, 0x97, 0xA8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 4: .FireworkExplode / 烟花绽放
+        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x45, 0x78, 0x70, 0x6C, 0x6F, 0x64, 0x65,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0xE7, 0x83, 0x9F, 0xE8, 0x8A, 0xB1, 0xE7, 0xBB, 0xBD, 0xE6, 0x94, 0xBE, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 5: .WindWindSm / 轻风微拂
+        0x2E, 0x57, 0x69, 0x6E, 0x64, 0x57, 0x69, 0x6E, 0x64, 0x53, 0x6D, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE8, 0xBD, 0xBB, 0xE9, 0xA3, 0x8E, 0xE5, 0xBE,
+        0xAE, 0xE6, 0x8B, 0x82, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 6: .CinematicSplash / 光影水雾
+        0x2E, 0x43, 0x69, 0x6E, 0x65, 0x6D, 0x61, 0x74, 0x69, 0x63, 0x53, 0x70, 0x6C, 0x61, 0x73, 0x68,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0xE5, 0x85, 0x89, 0xE5, 0xBD, 0xB1, 0xE6, 0xB0, 0xB4, 0xE9, 0x9B, 0xBE, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 7: .CannonSpark / 礼炮星火
+        0x2E, 0x43, 0x61, 0x6E, 0x6E, 0x6F, 0x6E, 0x53, 0x70, 0x61, 0x72, 0x6B, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0xA4, 0xBC, 0xE7, 0x82, 0xAE, 0xE6, 0x98,
+        0x9F, 0xE7, 0x81, 0xAB, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 8: .FireworkSmall / 雨滴点点
+        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x53, 0x6D, 0x61, 0x6C, 0x6C, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0x9B, 0xA8, 0xE6, 0xBB, 0xB4, 0xE7, 0x82,
+        0xB9, 0xE7, 0x82, 0xB9, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 9: .BridgeCloud / 云间虹桥
+        0x2E, 0x42, 0x72, 0x69, 0x64, 0x67, 0x65, 0x43, 0x6C, 0x6F, 0x75, 0x64, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE4, 0xBA, 0x91, 0xE9, 0x97, 0xB4, 0xE8, 0x99,
+        0xB9, 0xE6, 0xA1, 0xA5, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 10: .Firework / 烟花暗红
+        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0x83, 0x9F, 0xE8, 0x8A, 0xB1, 0xE6, 0x9A,
+        0x97, 0xE7, 0xBA, 0xA2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 11: .FireworkTrail / 烟花尾焰
+        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x54, 0x72, 0x61, 0x69, 0x6C, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0x83, 0x9F, 0xE8, 0x8A, 0xB1, 0xE5, 0xB0,
+        0xBE, 0xE7, 0x84, 0xB0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 12: .FireworkRing / 烟花光环
+        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x52, 0x69, 0x6E, 0x67, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0x83, 0x9F, 0xE8, 0x8A, 0xB1, 0xE5, 0x85,
+        0x89, 0xE7, 0x8E, 0xAF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 13: .FireworkSpark / 烟花星火
+        0x2E, 0x46, 0x69, 0x72, 0x65, 0x77, 0x6F, 0x72, 0x6B, 0x53, 0x70, 0x61, 0x72, 0x6B, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0x83, 0x9F, 0xE8, 0x8A, 0xB1, 0xE6, 0x98,
+        0x9F, 0xE7, 0x81, 0xAB, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 14: .DarkExplode / 暗黑爆炸
+        0x2E, 0x44, 0x61, 0x72, 0x6B, 0x45, 0x78, 0x70, 0x6C, 0x6F, 0x64, 0x65, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0x9A, 0x97, 0xE9, 0xBB, 0x91, 0xE7, 0x88,
+        0x86, 0xE7, 0x82, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 15: .TornadoDebris / 龙卷碎屑
+        0x2E, 0x54, 0x6F, 0x72, 0x6E, 0x61, 0x64, 0x6F, 0x44, 0x65, 0x62, 0x72, 0x69, 0x73, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xBE, 0x99, 0xE5, 0x8D, 0xB7, 0xE7, 0xA2,
+        0x8E, 0xE5, 0xB1, 0x91, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 16: .StormDebris / 风暴碎片
+        0x2E, 0x53, 0x74, 0x6F, 0x72, 0x6D, 0x44, 0x65, 0x62, 0x72, 0x69, 0x73, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xA3, 0x8E, 0xE6, 0x9A, 0xB4, 0xE7, 0xA2,
+        0x8E, 0xE7, 0x89, 0x87, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 17: .TornadoDust / 龙卷尘沙
+        0x2E, 0x54, 0x6F, 0x72, 0x6E, 0x61, 0x64, 0x6F, 0x44, 0x75, 0x73, 0x74, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xBE, 0x99, 0xE5, 0x8D, 0xB7, 0xE5, 0xB0,
+        0x98, 0xE6, 0xB2, 0x99, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 18: .ArtBookMarker / 书签标记
+        0x2E, 0x41, 0x72, 0x74, 0x42, 0x6F, 0x6F, 0x6B, 0x4D, 0x61, 0x72, 0x6B, 0x65, 0x72, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE4, 0xB9, 0xA6, 0xE7, 0xAD, 0xBE, 0xE6, 0xA0,
+        0x87, 0xE8, 0xAE, 0xB0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 19: .N_pendantAP16 / 先祖吊坠
+        0x2E, 0x4E, 0x5F, 0x70, 0x65, 0x6E, 0x64, 0x61, 0x6E, 0x74, 0x41, 0x50, 0x31, 0x36, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE5, 0x85, 0x88, 0xE7, 0xA5, 0x96, 0xE5, 0x90,
+        0x8A, 0xE5, 0x9D, 0xA0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 20: .N_jellyMesh03 / 水母网格
+        0x2E, 0x4E, 0x5F, 0x6A, 0x65, 0x6C, 0x6C, 0x79, 0x4D, 0x65, 0x73, 0x68, 0x30, 0x33, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0xB0, 0xB4, 0xE6, 0xAF, 0x8D, 0xE7, 0xBD,
+        0x91, 0xE6, 0xA0, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 21: .N_crabMesh03 / 蟹形网格
+        0x2E, 0x4E, 0x5F, 0x63, 0x72, 0x61, 0x62, 0x4D, 0x65, 0x73, 0x68, 0x30, 0x33, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE8, 0x9F, 0xB9, 0xE5, 0xBD, 0xA2, 0xE7, 0xBD,
+        0x91, 0xE6, 0xA0, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 22: .N_mantaMesh / 鳐鲲网格
+        0x2E, 0x4E, 0x5F, 0x6D, 0x61, 0x6E, 0x74, 0x61, 0x4D, 0x65, 0x73, 0x68, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0xB3, 0x90, 0xE9, 0xB2, 0xB2, 0xE7, 0xBD,
+        0x91, 0xE6, 0xA0, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 23: .StewardScepter / 管家长杖
+        0x2E, 0x53, 0x74, 0x65, 0x77, 0x61, 0x72, 0x64, 0x53, 0x63, 0x65, 0x70, 0x74, 0x65, 0x72, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0xE7, 0xAE, 0xA1, 0xE5, 0xAE, 0xB6, 0xE9, 0x95, 0xBF, 0xE6, 0x9D, 0x96, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 24: .Sakura / 樱花飘散
+        0x2E, 0x53, 0x61, 0x6B, 0x75, 0x72, 0x61, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0xA8, 0xB1, 0xE8, 0x8A, 0xB1, 0xE9, 0xA3,
+        0x98, 0xE6, 0x95, 0xA3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 25: .SakuraDark / 暗色樱花
+        0x2E, 0x53, 0x61, 0x6B, 0x75, 0x72, 0x61, 0x44, 0x61, 0x72, 0x6B, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0x9A, 0x97, 0xE8, 0x89, 0xB2, 0xE6, 0xA8,
+        0xB1, 0xE8, 0x8A, 0xB1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 26: .SakuraFalling / 落樱缤纷
+        0x2E, 0x53, 0x61, 0x6B, 0x75, 0x72, 0x61, 0x46, 0x61, 0x6C, 0x6C, 0x69, 0x6E, 0x67, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE8, 0x90, 0xBD, 0xE6, 0xA8, 0xB1, 0xE7, 0xBC,
+        0xA4, 0xE7, 0xBA, 0xB7, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 27: .SakuraCyan / 青色落樱
+        0x2E, 0x53, 0x61, 0x6B, 0x75, 0x72, 0x61, 0x43, 0x79, 0x61, 0x6E, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0x9D, 0x92, 0xE8, 0x89, 0xB2, 0xE8, 0x90,
+        0xBD, 0xE6, 0xA8, 0xB1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 28: .SakuraYellow / 金色落樱
+        0x2E, 0x53, 0x61, 0x6B, 0x75, 0x72, 0x61, 0x59, 0x65, 0x6C, 0x6C, 0x6F, 0x77, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE9, 0x87, 0x91, 0xE8, 0x89, 0xB2, 0xE8, 0x90,
+        0xBD, 0xE6, 0xA8, 0xB1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 29: .SakuraOrange / 橙色落樱
+        0x2E, 0x53, 0x61, 0x6B, 0x75, 0x72, 0x61, 0x4F, 0x72, 0x61, 0x6E, 0x67, 0x65, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE6, 0xA9, 0x99, 0xE8, 0x89, 0xB2, 0xE8, 0x90,
+        0xBD, 0xE6, 0xA8, 0xB1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 30: .BacconCelebrate / 缤纷彩带
+        0x2E, 0x42, 0x61, 0x63, 0x63, 0x6F, 0x6E, 0x43, 0x65, 0x6C, 0x65, 0x62, 0x72, 0x61, 0x74, 0x65,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0xE7, 0xBC, 0xA4, 0xE7, 0xBA, 0xB7, 0xE5, 0xBD, 0xA9, 0xE5, 0xB8, 0xA6, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 31: .Celebrate / 庆典欢腾
+        0x2E, 0x43, 0x65, 0x6C, 0x65, 0x62, 0x72, 0x61, 0x74, 0x65, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE5, 0xBA, 0x86, 0xE5, 0x85, 0xB8, 0xE6, 0xAC,
+        0xA2, 0xE8, 0x85, 0xBE, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 32: .Celebrate2 / 庆典欢腾2
+        0x2E, 0x43, 0x65, 0x6C, 0x65, 0x62, 0x72, 0x61, 0x74, 0x65, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE5, 0xBA, 0x86, 0xE5, 0x85, 0xB8, 0xE6, 0xAC,
+        0xA2, 0xE8, 0x85, 0xBE, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 33: .Celebrate3 / 庆典欢腾3
+        0x2E, 0x43, 0x65, 0x6C, 0x65, 0x62, 0x72, 0x61, 0x74, 0x65, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE5, 0xBA, 0x86, 0xE5, 0x85, 0xB8, 0xE6, 0xAC,
+        0xA2, 0xE8, 0x85, 0xBE, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 34: .Celebrate4 / 庆典欢腾4
+        0x2E, 0x43, 0x65, 0x6C, 0x65, 0x62, 0x72, 0x61, 0x74, 0x65, 0x34, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE5, 0xBA, 0x86, 0xE5, 0x85, 0xB8, 0xE6, 0xAC,
+        0xA2, 0xE8, 0x85, 0xBE, 0x34, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    },
+    { // 35: .CannonSmoke / 礼炮硝烟
+        0x2E, 0x43, 0x61, 0x6E, 0x6E, 0x6F, 0x6E, 0x53, 0x6D, 0x6F, 0x6B, 0x65, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE7, 0xA4, 0xBC, 0xE7, 0x82, 0xAE, 0xE7, 0xA1,
+        0x9D, 0xE7, 0x83, 0x9F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     },
 };
 
-static_assert(sizeof(kFeature1020Patterns) / sizeof(kFeature1020Patterns[0]) == 18,
+static_assert(sizeof(kFeature1020Patterns) / sizeof(kFeature1020Patterns[0]) == kFeature1020PatternCount,
               "feature 1020 pattern table size mismatch");
 
 constexpr PointerChainIntWriteCase kPointerChainIntWriteCases[] = {
-    {607, 0x1C4B78, kFeature608CloudChain, 4, 0x0, 0x10},
-    {608, 0x1C4BC0, kFeature608CloudChain, 4, 0x4, 0x10},
-    {609, 0x1C1B20, kFeature608CloudChain, 4, 0x8, 0x10},
-    {610, 0x1C4C58, kFeature608CloudChain, 4, 0xC, 0x10},
+    {607, 0x1C8D60, kFeature608CloudChain, 4, 0x0, 0x10},
+    {608, 0x1C75D0, kFeature608CloudChain, 4, 0x4, 0x10},
+    {609, 0x1C8E54, kFeature608CloudChain, 4, 0x8, 0x10},
+    {610, 0x1C8CF8, kFeature608CloudChain, 4, 0xC, 0x10},
 };
 
 StateOnlyCase kStateOnlyCases[] = {
-    {430, 0x1C3D38, 0x37BC08, &g_feature_430_wing_break_count},
-    {432, 0x1C4B20, 0x37BB80, &g_feature_432_heart_radius},
-    {433, 0x1C4E4C, 0x37BB88, &g_feature_433_loop_count},
-    {434, 0x1C5404, 0x37BB90, &g_feature_434_heart_height},
-    {437, 0x1C1540, 0x37BB98, &g_feature_437_creature_height},
-    {438, 0x1C47D8, 0x37BBA0, &g_feature_438_creature_radius},
-    {439, 0x1C22B8, 0x37BBA8, &g_feature_439_creature_density},
-    {440, 0x1C4E20, 0x37BBB0, &g_feature_440_loop_seconds},
-    {503, 0x1C3108, 0x3855B8, &g_feature_503_height_input},
-    {504, 0x1C4A00, 0x3855C0, &g_feature_504_body_shape_input},
-    {926, 0x1C3CF8, 0x37BBD0, &g_feature_926_candle_count},
-    {928, 0x1C1B10, 0x37BBD8, &g_feature_928_firework_count},
-    {952, 0x1C2DA8, 0x37BBE0, &g_feature_952_firework_count},
-    {1001, 0x1C30F8, 0x385578, &g_feature_1001_red},
-    {1002, 0x1C25B4, 0x37BBF0, &g_feature_1002_green},
-    {1003, 0x1C350C, 0x385580, &g_feature_1003_blue},
-    {1004, 0x1C2C38, 0x37BBF8, &g_feature_1004_spawn_count},
+    {430, 0x1C6460, 0x385C28, &g_feature_430_wing_break_count},
+    {432, 0x1C5E9C, 0x385BA0, &g_feature_432_heart_radius},
+    {433, 0x1C6600, 0x385BA8, &g_feature_433_loop_count},
+    {434, 0x1C670C, 0x385BB0, &g_feature_434_heart_height},
+    {437, 0x1C6768, 0x385BB8, &g_feature_437_creature_height},
+    {438, 0x1C6AB8, 0x385BC0, &g_feature_438_creature_radius},
+    {439, 0x1C802C, 0x385BC8, &g_feature_439_creature_density},
+    {440, 0x1C5FD4, 0x385BD0, &g_feature_440_loop_seconds},
+    {503, 0x1CA46C, 0x390500, &g_feature_503_height_input},
+    {504, 0x1C7340, 0x390508, &g_feature_504_body_shape_input},
+    {926, 0x1C8E10, 0x385BF0, &g_feature_926_candle_count},
+    {928, 0x1C8DD4, 0x385BF8, &g_feature_928_firework_count},
+    {952, 0x1C8D98, 0x385C00, &g_feature_952_firework_count},
+    {1001, 0x1C8E44, 0x3904C0, &g_feature_1001_red},
+    {1002, 0x1C8E34, 0x385C10, &g_feature_1002_green},
+    {1003, 0x1C7394, 0x3904C8, &g_feature_1003_blue},
+    {1004, 0x1C8F7C, 0x385C18, &g_feature_1004_spawn_count},
 };
 
 BoolStateOnlyCase kBoolStateOnlyCases[] = {
-    {405, 0x1C1420, 0x3854DC, &g_feature_405_anniversary_hat},
-    {429, 0x1C476C, 0x3854B0, &g_feature_429_absorb_wing},
-    {441, 0x1C4FA0, 0x3854B4, &g_feature_441_delay_place},
+    {405, 0x1C5F2C, 0x390424, &g_feature_405_anniversary_hat},
+    {429, 0x1C61D0, 0x3903F4, &g_feature_429_absorb_wing},
+    {441, 0x1C7350, 0x3903F8, &g_feature_441_delay_place},
 };
 
 constexpr std::uint32_t kFeature510MagicIds[] = {
@@ -1565,7 +1657,7 @@ constexpr std::uint32_t kFeature515MagicIds[] = {
 };
 
 constexpr std::uint32_t kFeature516MagicIds[] = {
-    0x3F6C9373, 0x121CCD93, 0x0F5059A2, 0x00997AA9, 0x5F4C7323, 0x1B1CAE2E,
+    0x3F6C9373, 0x121CCD93, 0x0F5059A2, 0x00997AA9, 0x5F4C7323, 0x55A1FEB1,
     0x077C43AD, 0x4EA92DDD, 0x098A84C6, 0x55DB5E0D, 0x4065AD34, 0x4ACDCCAD,
     0x13D9224D, 0x082E8D38, 0x45950486, 0x0D8806B3, 0x53A8FE85, 0x60AD907C,
     0xC9928244, 0xEA94CF7A, 0x1B1CAE2E, 0x4C064D60, 0x39D69525, 0xD0743EC1,
@@ -1580,14 +1672,14 @@ constexpr std::uint32_t kFeature517MagicIds[] = {
 constexpr std::uintptr_t kFeature510SlotOffset = ~static_cast<std::uintptr_t>(0);
 
 constexpr MagicSlotCase kMagicSlotCases[] = {
-    {510, 0x1C412C, 0x37C2C0, kFeature510SlotOffset, kFeature510MagicIds, sizeof(kFeature510MagicIds) / sizeof(kFeature510MagicIds[0])},
-    {511, 0x1C2724, 0x364680, 0x38, kFeature511MagicIds, sizeof(kFeature511MagicIds) / sizeof(kFeature511MagicIds[0])},
-    {512, 0x1C467C, 0x364688, 0x70, kFeature512MagicIds, sizeof(kFeature512MagicIds) / sizeof(kFeature512MagicIds[0])},
-    {513, 0x1C401C, 0x364690, 0xA8, kFeature513MagicIds, sizeof(kFeature513MagicIds) / sizeof(kFeature513MagicIds[0])},
-    {514, 0x1C1BEC, 0x364698, 0xE0, kFeature514MagicIds, sizeof(kFeature514MagicIds) / sizeof(kFeature514MagicIds[0])},
-    {515, 0x1C1CB8, 0x3646A0, 0x118, kFeature515MagicIds, sizeof(kFeature515MagicIds) / sizeof(kFeature515MagicIds[0])},
-    {516, 0x1C40D4, 0x3646A8, 0x150, kFeature516MagicIds, sizeof(kFeature516MagicIds) / sizeof(kFeature516MagicIds[0])},
-    {517, 0x1C4780, 0x3646B0, 0x188, kFeature517MagicIds, sizeof(kFeature517MagicIds) / sizeof(kFeature517MagicIds[0])},
+    {510, 0x1C9FEC, 0x3862C0, kFeature510SlotOffset, kFeature510MagicIds, sizeof(kFeature510MagicIds) / sizeof(kFeature510MagicIds[0])},
+    {511, 0x1C5EAC, 0x36E6A8, 0x38, kFeature511MagicIds, sizeof(kFeature511MagicIds) / sizeof(kFeature511MagicIds[0])},
+    {512, 0x1C5DF0, 0x36E6B0, 0x70, kFeature512MagicIds, sizeof(kFeature512MagicIds) / sizeof(kFeature512MagicIds[0])},
+    {513, 0x1C73DC, 0x36E6B8, 0xA8, kFeature513MagicIds, sizeof(kFeature513MagicIds) / sizeof(kFeature513MagicIds[0])},
+    {514, 0x1C7874, 0x36E6C0, 0xE0, kFeature514MagicIds, sizeof(kFeature514MagicIds) / sizeof(kFeature514MagicIds[0])},
+    {515, 0x1C8918, 0x36E6C8, 0x118, kFeature515MagicIds, sizeof(kFeature515MagicIds) / sizeof(kFeature515MagicIds[0])},
+    {516, 0x1C7AD4, 0x36E6D0, 0x150, kFeature516MagicIds, sizeof(kFeature516MagicIds) / sizeof(kFeature516MagicIds[0])},
+    {517, 0x1C88C0, 0x36E6D8, 0x188, kFeature517MagicIds, sizeof(kFeature517MagicIds) / sizeof(kFeature517MagicIds[0])},
 };
 
 constexpr SwitchCaseTarget kHighValueSwitchCases[] = {
@@ -1608,14 +1700,14 @@ constexpr SwitchCaseTarget kHighValueSwitchCases[] = {
 };
 
 constexpr ScenePatchRange kScenePatchRanges[] = {
-    {201, 1, 13, 0x1C4CAC},
-    {202, 14, 6, 0x1C1B00},
-    {203, 20, 9, 0x1C2798},
-    {204, 29, 9, 0x1C0D00},
-    {205, 38, 17, 0x1C4E10},
-    {206, 55, 13, 0x1C4DC0},
-    {207, 68, 18, 0x1C4F90},
-    {208, 86, 7, 0x1C4F10},
+    {201, 1, 13, 0x1C5F40},
+    {202, 14, 6, 0x1C5AC4},
+    {203, 20, 9, 0x1CA47C},
+    {204, 29, 9, 0x1CA66C},
+    {205, 38, 17, 0x1CA698},
+    {206, 55, 13, 0x1C7C50},
+    {207, 68, 18, 0x1C6A34},
+    {208, 86, 7, 0x1C87F4},
 };
 
 constexpr Feature803ColorPreset kFeature803ColorPresets[] = {
@@ -1626,44 +1718,44 @@ constexpr Feature803ColorPreset kFeature803ColorPresets[] = {
 };
 
 constexpr ScenePatchRange kPatchPayloadWriteRanges[] = {
-    {804, 1, 13, 0x1C4AA0},
-    {805, 14, 6, 0x1C4804},
-    {806, 20, 9, 0x1C1E20},
-    {807, 29, 9, 0x1C1770},
-    {808, 38, 17, 0x1C2200},
-    {809, 55, 13, 0x1C4CD8},
-    {810, 68, 18, 0x1C2334},
-    {811, 86, 7, 0x1C1D2C},
+    {804, 1, 13, 0x1C95D0},
+    {805, 14, 6, 0x1C8C5C},
+    {806, 20, 9, 0x1C8970},
+    {807, 29, 9, 0x1C6104},
+    {808, 38, 17, 0x1C62F8},
+    {809, 55, 13, 0x1C78CC},
+    {810, 68, 18, 0x1C79D4},
+    {811, 86, 7, 0x1C6B54},
 };
 
 constexpr PortalRange kPortalRanges[] = {
-    {936, 1, 13, 0x1C2164},
-    {937, 14, 6, 0x1C2138},
-    {938, 20, 9, 0x1C22A8},
-    {939, 29, 9, 0x1C25E0},
-    {940, 38, 17, 0x1C3BC8},
-    {941, 55, 13, 0x1C3274},
-    {942, 68, 18, 0x1C3BA0},
-    {943, 86, 7, 0x1C4670},
+    {936, 1, 13, 0x1C67D8},
+    {937, 14, 6, 0x1C7A70},
+    {938, 20, 9, 0x1C75A4},
+    {939, 29, 9, 0x1C6FAC},
+    {940, 38, 17, 0x1C954C},
+    {941, 55, 13, 0x1C8850},
+    {942, 68, 18, 0x1C7508},
+    {943, 86, 7, 0x1C69D0},
 };
 
 constexpr DirectLevelRange kDirectLevelRanges[] = {
-    {813, 1, 13, 0x1C2C28},
-    {814, 14, 6, 0x1C3134},
-    {815, 20, 9, 0x1C34D4},
-    {816, 29, 9, 0x1C344C},
-    {817, 38, 17, 0x1C2C00},
-    {819, 55, 13, 0x1C4370},
-    {820, 68, 18, 0x1C27C4},
-    {821, 86, 7, 0x1C427C},
+    {813, 1, 13, 0x1C9858},
+    {814, 14, 6, 0x1C6740},
+    {815, 20, 9, 0x1C8374},
+    {816, 29, 9, 0x1C70A0},
+    {817, 38, 17, 0x1C966C},
+    {819, 55, 13, 0x1C9574},
+    {820, 68, 18, 0x1C9258},
+    {821, 86, 7, 0x1C6BF0},
 };
 
 constexpr DirectIndexedCommandCase kDirectIndexedCommandCases[] = {
-    {950, 18, 0x1C2280},
-    {951, 19, 0x1C473C},
-    {970, 39, 0x1C3424},
-    {971, 9, 0x1C2940},
-    {991, 17, 0x1C3280},
+    {950, 18, 0x1C8368},
+    {951, 19, 0x1C7AC8},
+    {970, 39, 0x1C73A4},
+    {971, 9, 0x1C8128},
+    {991, 17, 0x1C829C},
 };
 
 constexpr int kIndexedCommands922[] = {
@@ -1679,9 +1771,9 @@ constexpr int kIndexedCommands957[] = {
 };
 
 constexpr IndexedCommandRange kIndexedCommandRanges[] = {
-    {922, kIndexedCommands922, static_cast<int>(sizeof(kIndexedCommands922) / sizeof(kIndexedCommands922[0])), 0x1C2930},
-    {992, kIndexedCommands992, static_cast<int>(sizeof(kIndexedCommands992) / sizeof(kIndexedCommands992[0])), 0x1C2308},
-    {957, kIndexedCommands957, static_cast<int>(sizeof(kIndexedCommands957) / sizeof(kIndexedCommands957[0])), 0x1C34FC},
+    {922, kIndexedCommands922, static_cast<int>(sizeof(kIndexedCommands922) / sizeof(kIndexedCommands922[0])), 0x1C80FC},
+    {992, kIndexedCommands992, static_cast<int>(sizeof(kIndexedCommands992) / sizeof(kIndexedCommands992[0])), 0x1C8640},
+    {957, kIndexedCommands957, static_cast<int>(sizeof(kIndexedCommands957) / sizeof(kIndexedCommands957[0])), 0x1C70C8},
 };
 
 constexpr const char *kPortalDisplayNames[] = {
@@ -2593,6 +2685,32 @@ bool applyBasicTogglePatchCase(const ChangeRequest &request, std::uint32_t targe
     return true;
 }
 
+bool applyFeature15LiveStreamMode(JNIEnv *env, const ChangeRequest &request, std::uint32_t target_ea) {
+    if (request.feature_num != 15) {
+        return false;
+    }
+    jclass menu_cls = findClass(env, "com/android/support/Menu");
+    if (!menu_cls) {
+        logWarn("feature 15 live stream mode failed target=0x%X class=com/android/support/Menu", target_ea);
+        return true;
+    }
+    jmethodID set_live_stream = getStaticMethod(env, menu_cls, "setLiveStreamMode", "(Z)V");
+    if (!set_live_stream) {
+        env->DeleteLocalRef(menu_cls);
+        logWarn("feature 15 live stream mode failed target=0x%X method=setLiveStreamMode(Z)V", target_ea);
+        return true;
+    }
+    env->CallStaticVoidMethod(menu_cls, set_live_stream, request.bool_value ? JNI_TRUE : JNI_FALSE);
+    const bool had_exception = clearPendingException(env, "Menu.setLiveStreamMode");
+    env->DeleteLocalRef(menu_cls);
+    logInfo(
+        "feature 15 live stream mode enabled=%u target=0x%X state_byte=0x3903B8 method=Menu.setLiveStreamMode ok=%d",
+        request.bool_value ? 1u : 0u,
+        target_ea,
+        had_exception ? 0 : 1);
+    return true;
+}
+
 bool resolvePointerChain(const std::uintptr_t *chain, int chain_count, std::uintptr_t *out) {
     if (!chain || chain_count <= 0 || !out) {
         return false;
@@ -3107,7 +3225,7 @@ bool resolveDragonTargetBase(std::uintptr_t *out, std::uint32_t target_ea, int f
     }
 
     logWarn(
-        "feature %d dragon worker target chain failed target=0x%X chain=[base+0x473D660]+0x8158->+0xB0",
+        "feature %d dragon worker target chain failed target=0x%X chain=[base+0x0473E660]+0x8158->+0xB0",
         feature_num,
         target_ea);
     return false;
@@ -3128,8 +3246,8 @@ bool applyGameSpeedSeekbar(const ChangeRequest &request, std::uint32_t target_ea
     }
 
     std::uint64_t first = 0;
-    if (!readU64Raw(base + 0x0484B550, &first)) {
-        logWarn("game speed seekbar failed target=0x%X chain0=0x484B550 read-failed", target_ea);
+    if (!readU64Raw(base + 0x0484C550, &first)) {
+        logWarn("game speed seekbar failed target=0x%X chain0=0x0484C550 read-failed", target_ea);
         return true;
     }
 
@@ -3145,7 +3263,7 @@ bool applyGameSpeedSeekbar(const ChangeRequest &request, std::uint32_t target_ea
     }
 
     logInfo(
-        "game speed seekbar feature=16 target=0x%X chain=[base+0x484B550]+0x28 address=0x%llX value=%.6f",
+        "game speed seekbar feature=16 target=0x%X chain=[base+0x0484C550]+0x28 address=0x%llX value=%.6f",
         target_ea,
         static_cast<unsigned long long>(address),
         static_cast<double>(value));
@@ -3498,7 +3616,7 @@ bool applyFeature804811PatchPayloadWrite(const ChangeRequest &request, std::uint
             static_cast<int>(sizeof(kFeature804811PatchPayloadChain) / sizeof(kFeature804811PatchPayloadChain[0])),
             &destination)) {
         logWarn(
-            "feature %d patch payload write resolve failed item=%d target=0x%X chain=unk_364188 {0x0473D660,0x7D78,0x398} helper=sub_16D388",
+            "feature %d patch payload write resolve failed item=%d target=0x%X chain=unk_364188 {0x0473E660,0x7D78,0x398} helper=sub_16D388",
             request.feature_num,
             request.int_value,
             target_ea);
@@ -3640,7 +3758,7 @@ void runFeature301HomeRouteWorker(std::uint32_t target_ea) {
     std::uintptr_t position = 0;
     if (!resolvePointerChain(kAvatarPositionChain, 4, &position)) {
         logWarn(
-            "feature 301 home-route avatar resolve failed target=0x%X source_chain=qword_364068 worker=sub_1871F4",
+            "feature 301 home-route avatar resolve failed target=0x%X source_chain=unk_36E068 worker=sub_18CA98",
             target_ea);
         return;
     }
@@ -3663,7 +3781,7 @@ void runFeature301HomeRouteWorker(std::uint32_t target_ea) {
 
         ++loops;
         logInfo(
-            "feature 301 home-route loop completed target=0x%X loop=%zu position=0x%llX written=%zu failed=%zu table=unk_365690 points=253 worker=sub_1871F4 state_byte=0x385534 gate_byte=0x385700",
+            "feature 301 home-route loop completed target=0x%X loop=%zu position=0x%llX written=%zu failed=%zu table=unk_36F6B0 points=253 worker=sub_18CA98 state_byte=0x39047C gate_byte=0x3906A0",
             target_ea,
             loops,
             static_cast<unsigned long long>(position),
@@ -3686,7 +3804,7 @@ bool applyFeature301HomeRoute(JNIEnv *env, const ChangeRequest &request, std::ui
     if (!g_feature_301_gate.load()) {
         g_feature_301_gate.store(true);
         logInfo(
-            "feature 301 home-route gate initialized target=0x%X state_byte=0x385534 gate_byte=0x385700 enabled=%d",
+            "feature 301 home-route gate initialized target=0x%X state_byte=0x39047C gate_byte=0x3906A0 enabled=%d",
             target_ea,
             request.bool_value ? 1 : 0);
         return true;
@@ -3694,14 +3812,14 @@ bool applyFeature301HomeRoute(JNIEnv *env, const ChangeRequest &request, std::ui
 
     if (!request.bool_value) {
         logInfo(
-            "feature 301 home-route disabled target=0x%X state_byte=0x385534 gate_byte=0x385700 worker=sub_1871F4",
+            "feature 301 home-route disabled target=0x%X state_byte=0x39047C gate_byte=0x3906A0 worker=sub_18CA98",
             target_ea);
         return true;
     }
 
     showToast(env, request.context, u8"旅人切记！\n⚠️禁阁终点请手动关闭⚠️", true);
     logInfo(
-        "feature 301 home-route enabled target=0x%X wrapper=0x1C48A8 worker=sub_1871F4 table=unk_365690 points=253 source_chain=qword_364068 sleep_us=0x39FBC0/0xB71B00 prompt=0x2F07C7 key=0x295D50",
+        "feature 301 home-route enabled target=0x%X case=0x1CA34C worker=sub_18CA98 table=unk_36F6B0 points=253 source_chain=unk_36E068 sleep_us=0x39FBC0/0xB71B00 prompt=0x2F8EFE key=xmmword_29DC20",
         target_ea);
     std::thread([target_ea]() {
         runFeature301HomeRouteWorker(target_ea);
@@ -3752,22 +3870,29 @@ bool applyFeature920921CandleRoute(JNIEnv *env, const ChangeRequest &request, st
         g_feature_920_921_candle_index.store(1);
     }
 
-    const CandleRoute *route = findCandleRouteByLevelId(level_id);
+    const bool with_lightwing = feature10000LightwingRouteEnabled();
+    const CandleRouteTable route_table = with_lightwing
+        ? CandleRouteTable::WithLightwing
+        : CandleRouteTable::NoLightwing;
+    const char *route_table_name = with_lightwing ? "dword_38E1E8" : "dword_38EEE8";
+
+    const CandleRoute *route = findCandleRouteByLevelId(level_id, route_table);
     if (route == nullptr || route->point_count == 0) {
         if (request.feature_num == 921) {
             g_feature_920_921_candle_index.store(1);
         }
         logWarn(
-            "feature %d candle route missing target=0x%X level_id=0x%08X table=qword_383FB0 routes=%zu title=警告 message=当前地图未录入",
+            "feature %d candle route missing target=0x%X level_id=0x%08X table=%s routes=%zu title=警告 message=当前地图未录入",
             request.feature_num,
             target_ea,
             level_id,
-            candleRouteCount());
+            route_table_name,
+            candleRouteCount(route_table));
         showToast(env, request.context, u8"当前地图未录入", true);
         return true;
     }
 
-    const CandleRoutePoint *points = candleRoutePoints(*route);
+    const CandleRoutePoint *points = candleRoutePoints(*route, route_table);
     if (points == nullptr) {
         logWarn(
             "feature %d candle route points invalid target=0x%X level_id=0x%08X offset=%zu count=%zu",
@@ -3818,7 +3943,7 @@ bool applyFeature920921CandleRoute(JNIEnv *env, const ChangeRequest &request, st
     }
 
     logInfo(
-        "feature %d candle route target=0x%X level_id=0x%08X index=%d/%d position=0x%llX y_delta=%.1f ok=%d table=qword_383FB0 source_chain=qword_3640B8/qword_364068 title=烛火进度",
+        "feature %d candle route target=0x%X level_id=0x%08X index=%d/%d position=0x%llX y_delta=%.1f ok=%d table=%s source_chain=qword_3640B8/qword_364068 title=烛火进度",
         request.feature_num,
         target_ea,
         level_id,
@@ -3826,7 +3951,8 @@ bool applyFeature920921CandleRoute(JNIEnv *env, const ChangeRequest &request, st
         route_count,
         static_cast<unsigned long long>(position),
         static_cast<double>(y_delta),
-        ok ? 1 : 0);
+        ok ? 1 : 0,
+        route_table_name);
     return true;
 }
 
@@ -4112,7 +4238,7 @@ bool writeFeature309Instruction(std::uint32_t value, std::uint32_t target_ea, co
     std::uintptr_t base = 0;
     if (!resolveBootloaderBase(&base)) {
         logWarn(
-            "feature 309 map-route instruction write failed target=0x%X stage=%s module=%s qword_364498=0x01CF02DC error=module-not-loaded",
+            "feature 309 map-route instruction write failed target=0x%X stage=%s module=%s qword_36E4B8=0x01CF0D4C error=module-not-loaded",
             target_ea,
             stage ? stage : "",
             kBootloaderModule);
@@ -4122,7 +4248,7 @@ bool writeFeature309Instruction(std::uint32_t value, std::uint32_t target_ea, co
     const std::uintptr_t address = base + kFeature309InstructionOffset;
     const bool ok = writeOriginalProcTypedInt(address, static_cast<int>(value), 4);
     logInfo(
-        "feature 309 map-route instruction stage=%s target=0x%X address=0x%llX qword_364498=0x01CF02DC value=0x%08X ok=%d helper=sub_16D270",
+        "feature 309 map-route instruction stage=%s target=0x%X address=0x%llX qword_36E4B8=0x01CF0D4C value=0x%08X ok=%d helper=sub_16D270",
         stage ? stage : "",
         target_ea,
         static_cast<unsigned long long>(address),
@@ -4216,7 +4342,7 @@ void runFeature309MapRouteWorker(std::uint32_t target_ea) {
     std::uintptr_t route_base = 0;
     if (!resolvePointerChain(kFeature309MapRouteChain, 3, &route_base)) {
         logWarn(
-            "feature 309 map-route target resolve failed target=0x%X chain=qword_3640B8 [base+0x0473D660]+0x8520+0x630 worker=sub_1FE70C",
+            "feature 309 map-route target resolve failed target=0x%X chain=qword_3640B8 [base+0x0473E660]+0x8520+0x630 worker=sub_1FE70C",
             target_ea);
         return;
     }
@@ -4335,7 +4461,7 @@ bool writeFeature314DyeInstruction(std::uint32_t value, std::uint32_t target_ea,
     std::uintptr_t base = 0;
     if (!resolveBootloaderBase(&base)) {
         logWarn(
-            "feature 314 dye-route instruction write failed target=0x%X stage=%s module=%s qword_364498=0x01CF02DC error=module-not-loaded",
+            "feature 314 dye-route instruction write failed target=0x%X stage=%s module=%s qword_36E4B8=0x01CF0D4C error=module-not-loaded",
             target_ea,
             stage ? stage : "",
             kBootloaderModule);
@@ -4345,7 +4471,7 @@ bool writeFeature314DyeInstruction(std::uint32_t value, std::uint32_t target_ea,
     const std::uintptr_t address = base + kFeature309InstructionOffset;
     const bool ok = writeOriginalProcTypedInt(address, static_cast<int>(value), 4);
     logInfo(
-        "feature 314 dye-route instruction stage=%s target=0x%X address=0x%llX qword_364498=0x01CF02DC value=0x%08X ok=%d helper=sub_16D270",
+        "feature 314 dye-route instruction stage=%s target=0x%X address=0x%llX qword_36E4B8=0x01CF0D4C value=0x%08X ok=%d helper=sub_16D270",
         stage ? stage : "",
         target_ea,
         static_cast<unsigned long long>(address),
@@ -4450,7 +4576,7 @@ void runFeature314DyeRouteWorker(std::uint32_t target_ea) {
     std::uintptr_t route_base = 0;
     if (!resolvePointerChain(kFeature309MapRouteChain, 3, &route_base)) {
         logWarn(
-            "feature 314 dye-route target resolve failed target=0x%X chain=qword_3640B8 [base+0x0473D660]+0x8520+0x630 start_routine=loc_1FF294",
+            "feature 314 dye-route target resolve failed target=0x%X chain=qword_3640B8 [base+0x0473E660]+0x8520+0x630 start_routine=loc_1FF294",
             target_ea);
         return;
     }
@@ -4798,7 +4924,7 @@ void runFeature360TokenRouteWorker(int item, std::uint32_t target_ea) {
     std::uintptr_t route_base = 0;
     if (!resolvePointerChain(kFeature309MapRouteChain, 3, &route_base)) {
         logWarn(
-            "feature 360 token-route target resolve failed target=0x%X item=%d chain=qword_3640B8 [base+0x0473D660]+0x8520+0x630 worker=sub_183BA8",
+            "feature 360 token-route target resolve failed target=0x%X item=%d chain=qword_3640B8 [base+0x0473E660]+0x8520+0x630 worker=sub_183BA8",
             target_ea,
             item);
         return;
@@ -5034,7 +5160,7 @@ void runFeature361HangoutWorker(int item, std::uint32_t target_ea) {
     std::uintptr_t route_base = 0;
     if (!resolvePointerChain(kFeature309MapRouteChain, 3, &route_base)) {
         logWarn(
-            "feature 361 hangout target resolve failed target=0x%X item=%d chain=qword_3640B8 [base+0x0473D660]+0x8520+0x630 worker=sub_184DE4",
+            "feature 361 hangout target resolve failed target=0x%X item=%d chain=qword_3640B8 [base+0x0473E660]+0x8520+0x630 worker=sub_184DE4",
             target_ea,
             item);
         applyGameMemoryPatchByIndex(1);
@@ -5126,7 +5252,7 @@ bool writeFeature315SacrificeInstruction(std::uint32_t value, std::uint32_t targ
     std::uintptr_t base = 0;
     if (!resolveBootloaderBase(&base)) {
         logWarn(
-            "feature 315 auto-sacrifice instruction write failed target=0x%X stage=%s module=%s qword_364538[0]=0x02C9E514 error=module-not-loaded",
+            "feature 315 auto-sacrifice instruction write failed target=0x%X stage=%s module=%s qword_36E558[0]=0x02C79F58 error=module-not-loaded",
             target_ea,
             stage ? stage : "",
             kBootloaderModule);
@@ -5136,7 +5262,7 @@ bool writeFeature315SacrificeInstruction(std::uint32_t value, std::uint32_t targ
     const std::uintptr_t address = base + kFeature315SacrificeInstructionOffset;
     const bool ok = writeOriginalProcTypedInt(address, static_cast<int>(value), 4);
     logInfo(
-        "feature 315 auto-sacrifice instruction stage=%s target=0x%X address=0x%llX qword_364538[0]=0x02C9E514 value=0x%08X ok=%d helper=sub_16D270",
+        "feature 315 auto-sacrifice instruction stage=%s target=0x%X address=0x%llX qword_36E558[0]=0x02C79F58 value=0x%08X ok=%d helper=sub_1725C4",
         stage ? stage : "",
         target_ea,
         static_cast<unsigned long long>(address),
@@ -5189,7 +5315,7 @@ void runFeature315AutoSacrificeWorker(std::uint32_t target_ea) {
     ok = drop.ok && ok;
     if (!drop.ok) {
         logWarn(
-            "feature 315 auto-sacrifice sub_195B04 drop-wing-buffs failed target=0x%X status=%d error=%s body_len=%zu",
+            "feature 315 auto-sacrifice sub_19B390 drop-wing-buffs failed target=0x%X status=%d error=%s body_len=%zu",
             target_ea,
             drop.http_status,
             drop.error.c_str(),
@@ -5206,18 +5332,10 @@ void runFeature315AutoSacrificeWorker(std::uint32_t target_ea) {
              DIAG_TEXT("restore-wing-light-load")) && ok;
     std::this_thread::sleep_for(std::chrono::microseconds(0xB71B00));
 
-    sendFeature315DialogHint(u8"等待完成好嘛?", 3.0f, target_ea, "qword_3C9228");
-    std::this_thread::sleep_for(std::chrono::microseconds(0x2DC6C0));
-
-    GameMemoryPatchResult patch92 =
-        applyGameMemoryPatchByIndex(92);
-    ok = patch92.ok && ok;
-    std::this_thread::sleep_for(std::chrono::microseconds(0x5B8D80));
-
-    sendFeature315DialogHint(u8"献祭完成", 3.0f, target_ea, "qword_3C9248");
+    sendFeature315DialogHint(u8"献祭完成，请操作！", 3.0f, target_ea, "xmmword_3D4420");
 
     logInfo(
-        "feature 315 auto-sacrifice worker completed target=0x%X ok=%d worker=sub_1FF7F0 patches=88,91,92 qword_364538[0]=0x02C9E514 sub_195B04_equivalent=dropAllWingBuffs",
+        "feature 315 auto-sacrifice worker completed target=0x%X ok=%d worker=sub_206480 patches=88,91 qword_36E558[0]=0x02C79F58 sub_19B390_equivalent=dropAllWingBuffs",
         target_ea,
         ok ? 1 : 0);
 }
@@ -5227,10 +5345,11 @@ bool applyFeature315AutoSacrifice(const ChangeRequest &request, std::uint32_t ta
         return false;
     }
 
+    sendFeature315DialogHint(u8"献祭开始咯！", 3.0f, target_ea, "qword_3D2618");
     std::thread([target_ea]() {
         runFeature315AutoSacrificeWorker(target_ea);
     }).detach();
-    logInfo("feature 315 auto-sacrifice worker started target=0x%X wrapper=0x1C1030 worker=sub_1FF7F0", target_ea);
+    logInfo("feature 315 auto-sacrifice worker started target=0x%X wrapper=loc_1C9E18 case=1217 worker=sub_206480", target_ea);
     return true;
 }
 
@@ -5651,7 +5770,7 @@ bool writeFeature313OfflineWingState(std::uint32_t value, std::uint32_t target_e
     std::uintptr_t base = 0;
     if (!resolveBootloaderBase(&base)) {
         logWarn(
-            "feature 313 offline-wing state write failed target=0x%X stage=%s module=%s qword_364558=0x0359ED30 error=module-not-loaded",
+            "feature 313 offline-wing state write failed target=0x%X stage=%s module=%s qword_364558=0x0359FD30 error=module-not-loaded",
             target_ea,
             stage ? stage : "",
             kBootloaderModule);
@@ -5661,7 +5780,7 @@ bool writeFeature313OfflineWingState(std::uint32_t value, std::uint32_t target_e
     const std::uintptr_t address = base + kFeature313OfflineWingStateOffset;
     const bool ok = writeOriginalProcTypedInt(address, static_cast<int>(value), 4);
     logInfo(
-        "feature 313 offline-wing state stage=%s target=0x%X address=0x%llX qword_364558=0x0359ED30 value=%u ok=%d helper=sub_16D270",
+        "feature 313 offline-wing state stage=%s target=0x%X address=0x%llX qword_364558=0x0359FD30 value=%u ok=%d helper=sub_16D270",
         stage ? stage : "",
         target_ea,
         static_cast<unsigned long long>(address),
@@ -6372,7 +6491,7 @@ bool writeFeature502LightningFrame(std::uintptr_t trigger, std::uint32_t magic_i
 void runFeature502LightningWorker(std::uint32_t target_ea) {
     std::uintptr_t trigger = 0;
     if (!resolvePointerChain(kFeature630TriggerChain, 4, &trigger)) {
-        logWarn("feature 502 lightning spark trigger chain resolve failed target=0x%X chain=qword_3641F0", target_ea);
+        logWarn("feature 502 lightning spark trigger chain resolve failed target=0x%X chain=unk_36E1F0", target_ea);
         g_feature_502_lightning_enabled.store(false);
         return;
     }
@@ -6384,7 +6503,7 @@ void runFeature502LightningWorker(std::uint32_t target_ea) {
 
     ok = writeOriginalProcTypedInt(trigger, 0, 4) && ok;
     logInfo(
-        "feature 502 lightning spark worker stopped target=0x%X trigger=0x%llX qword_37BC00=0x%08X ok=%d",
+        "feature 502 lightning spark worker stopped target=0x%X trigger=0x%llX qword_385C20=0x%08X ok=%d",
         target_ea,
         static_cast<unsigned long long>(trigger),
         g_feature_501_magic_id.load(),
@@ -6400,7 +6519,7 @@ bool applyFeature502LightningSpark(const ChangeRequest &request, std::uint32_t t
     if (!g_feature_502_gate.load()) {
         g_feature_502_gate.store(true);
         logInfo(
-            "feature 502 lightning spark gate initialized target=0x%X state_byte=0x385544 gate_byte=0x385705 enabled=%d",
+            "feature 502 lightning spark gate initialized target=0x%X state_byte=0x39048C gate_byte=0x3906A5 enabled=%d",
             target_ea,
             request.bool_value ? 1 : 0);
         return true;
@@ -6408,13 +6527,13 @@ bool applyFeature502LightningSpark(const ChangeRequest &request, std::uint32_t t
 
     if (!request.bool_value) {
         logInfo(
-            "feature 502 lightning spark disabled target=0x%X state_byte=0x385544 gate_byte=0x385705",
+            "feature 502 lightning spark disabled target=0x%X state_byte=0x39048C gate_byte=0x3906A5",
             target_ea);
         return true;
     }
 
     logInfo(
-        "feature 502 lightning spark enabled target=0x%X worker=0x187794 chain=qword_3641F0 qword_37BC00=0x%08X",
+        "feature 502 lightning spark enabled target=0x%X worker=0x18D038 chain=unk_36E1F0 qword_385C20=0x%08X",
         target_ea,
         g_feature_501_magic_id.load());
     std::thread([target_ea]() {
@@ -6431,7 +6550,7 @@ bool writeFeature505SizeFrame(std::uintptr_t address, std::int64_t height, std::
 void runFeature505SizeWorker(std::uint32_t target_ea, std::int64_t height, std::int64_t body_shape) {
     std::uintptr_t address = 0;
     if (!resolvePointerChain(kFeature505SizeChain, 4, &address)) {
-        logWarn("feature 505 size worker chain resolve failed target=0x%X chain=qword_364230", target_ea);
+        logWarn("feature 505 size worker chain resolve failed target=0x%X chain=unk_36E230", target_ea);
         g_feature_505_size_modify_enabled.store(false);
         return;
     }
@@ -6442,7 +6561,7 @@ void runFeature505SizeWorker(std::uint32_t target_ea, std::int64_t height, std::
     }
 
     logInfo(
-        "feature 505 size worker stopped target=0x%X worker=0x1878C8 address=0x%llX height=%lld body=%lld ok=%d",
+        "feature 505 size worker stopped target=0x%X worker=0x18D16C address=0x%llX height=%lld body=%lld ok=%d",
         target_ea,
         static_cast<unsigned long long>(address),
         static_cast<long long>(height),
@@ -6459,7 +6578,7 @@ bool applyFeature505SizeWorker(const ChangeRequest &request, std::uint32_t targe
     if (!g_feature_505_gate.load()) {
         g_feature_505_gate.store(true);
         logInfo(
-            "feature 505 size modify gate initialized target=0x%X state_byte=0x385548 gate_byte=0x385706 enabled=%d",
+            "feature 505 size modify gate initialized target=0x%X state_byte=0x390490 gate_byte=0x3906A6 enabled=%d",
             target_ea,
             request.bool_value ? 1 : 0);
         return true;
@@ -6467,7 +6586,7 @@ bool applyFeature505SizeWorker(const ChangeRequest &request, std::uint32_t targe
 
     if (!request.bool_value) {
         logInfo(
-            "feature 505 size modify disabled target=0x%X state_byte=0x385548 gate_byte=0x385706",
+            "feature 505 size modify disabled target=0x%X state_byte=0x390490 gate_byte=0x3906A6",
             target_ea);
         return true;
     }
@@ -6475,7 +6594,7 @@ bool applyFeature505SizeWorker(const ChangeRequest &request, std::uint32_t targe
     const std::int64_t height = g_feature_503_height_input.load();
     const std::int64_t body_shape = g_feature_504_body_shape_input.load();
     logInfo(
-        "feature 505 size modify enabled target=0x%X worker=0x1878C8 chain=qword_364230 height=%lld body=%lld",
+        "feature 505 size modify enabled target=0x%X worker=0x18D16C chain=unk_36E230 height=%lld body=%lld",
         target_ea,
         static_cast<long long>(height),
         static_cast<long long>(body_shape));
@@ -7052,6 +7171,10 @@ bool applyFeature629TrialWater(const ChangeRequest &request, std::uint32_t targe
         return false;
     }
 
+    if (!feature629GateReady(target_ea)) {
+        return true;
+    }
+
     g_feature_629_enabled.store(request.bool_value);
     const bool enabled = request.bool_value;
     std::thread([enabled, target_ea]() {
@@ -7061,6 +7184,10 @@ bool applyFeature629TrialWater(const ChangeRequest &request, std::uint32_t targe
             runFeature629DisableWorker(target_ea);
         }
     }).detach();
+    logInfo(
+        "feature 629 remove trial water state=%d target=0x%X state_byte=0x3903E4 gate_chain=qword_36E0B8 marker=0xE7835080",
+        enabled ? 1 : 0,
+        target_ea);
     return true;
 }
 
@@ -7084,22 +7211,8 @@ bool resolveNativeCase(const ChangeRequest &request, ResolvedNativeCase *out) {
         return false;
     }
 
-    if (request.feature_num >= 1500 && request.feature_num <= 1509) {
-        if (const SwitchCaseTarget *secondary = findCase1500SwitchCase(request.feature_num)) {
-            *out = {DIAG_TEXT("secondary1500"), request.feature_num, secondary->target_ea};
-            if (request.feature_num == 1509) {
-                if (const SwitchCaseTarget *item = findFeatureSwitchCase(request.int_value)) {
-                    *out = {DIAG_TEXT("secondary1509_item"), request.int_value, item->target_ea};
-                } else {
-                    *out = {DIAG_TEXT("secondary1509_default"), request.int_value, kDefaultCaseTarget};
-                }
-            }
-            return true;
-        }
-    }
-
     const int primary_index = request.feature_num + 902;
-    if (primary_index >= 0 && primary_index <= 1932) {
+    if (primary_index >= 0 && primary_index <= 2411) {
         if (const SwitchCaseTarget *primary = findPrimarySwitchCase(primary_index)) {
             *out = {DIAG_TEXT("primary"), primary_index, primary->target_ea};
             return true;
@@ -7828,24 +7941,66 @@ void runFeature1020PatternWorker(int item, std::uint32_t target_ea) {
     }
 }
 
+int feature1020PatternOffsetForFeature(int feature_num) {
+    switch (feature_num) {
+        case 1020:
+            return 0;
+        case 1022:
+            return 18;
+        case 1023:
+            return 23;
+        case 1024:
+            return 29;
+        default:
+            return -1;
+    }
+}
+
+int feature1020PatternCountForFeature(int feature_num) {
+    switch (feature_num) {
+        case 1020:
+            return 18;
+        case 1022:
+            return 5;
+        case 1023:
+            return 6;
+        case 1024:
+            return 6;
+        default:
+            return 0;
+    }
+}
+
 bool applyFeature1020Pattern(const ChangeRequest &request, std::uint32_t target_ea) {
-    if (request.feature_num != 1020) {
+    const int offset = feature1020PatternOffsetForFeature(request.feature_num);
+    if (offset < 0) {
         return false;
     }
 
-    if (request.int_value < 1 ||
-        request.int_value > static_cast<int>(sizeof(kFeature1020Patterns) / sizeof(kFeature1020Patterns[0]))) {
+    const int local_count = feature1020PatternCountForFeature(request.feature_num);
+    if (request.int_value < 1 || request.int_value > local_count) {
         logWarn(
-            "feature 1020 pattern invalid item=%d target=0x%X switch=0x1C3160 count=18",
+            "feature %d pattern invalid item=%d target=0x%X switch=0x%X local_count=%d table_count=%zu",
+            request.feature_num,
             request.int_value,
-            target_ea);
+            target_ea,
+            target_ea,
+            local_count,
+            kFeature1020PatternCount);
         return true;
     }
 
-    const int item = request.int_value;
+    const int item = offset + request.int_value;
     std::thread([item, target_ea]() {
         runFeature1020PatternWorker(item, target_ea);
     }).detach();
+    logInfo(
+        "feature %d pattern mapped local_item=%d global_item=%d target=0x%X table_count=%zu",
+        request.feature_num,
+        request.int_value,
+        item,
+        target_ea,
+        kFeature1020PatternCount);
     return true;
 }
 
@@ -7993,7 +8148,7 @@ bool applyFeature1005Toggle(const ChangeRequest &request, std::uint32_t target_e
 
     g_feature_1005_insect_switch.store(request.bool_value);
     logInfo(
-        "feature 1005 insect switch=%d target=0x%X state_byte=0x385520",
+        "feature 1005 insect switch=%d target=0x%X state_byte=0x390468",
         request.bool_value ? 1 : 0,
         target_ea);
     return true;
@@ -8055,7 +8210,7 @@ bool applyFeature1007Toggle(const ChangeRequest &request, std::uint32_t target_e
 
     g_feature_1007_butterfly_follow.store(request.bool_value);
     logInfo(
-        "feature 1007 butterfly follow=%d target=0x%X state_byte=0x385524",
+        "feature 1007 butterfly follow=%d target=0x%X state_byte=0x39046C",
         request.bool_value ? 1 : 0,
         target_ea);
     return true;
@@ -8134,7 +8289,7 @@ bool sendBoolGatedIndexedCommand(const ChangeRequest &request, std::uint32_t tar
         case 450:
             command_index = 50;
             state = &g_force_landscape_enabled;
-            command_ea = 0x1C22E0;
+            command_ea = 0x1C91C4;
             break;
         case 451:
             command_index = 51;
@@ -8147,7 +8302,7 @@ bool sendBoolGatedIndexedCommand(const ChangeRequest &request, std::uint32_t tar
 
     state->store(request.bool_value);
     logInfo(
-        "bool-gated indexed command feature=%d enabled=%d command_index=%d target=0x%X command_ea=0x%X",
+        "bool-gated indexed command feature=%d enabled=%d command_index=%d target=0x%X command_ea=0x%X state_byte=0x3903FC",
         request.feature_num,
         request.bool_value ? 1 : 0,
         command_index,
@@ -8173,7 +8328,7 @@ void runFeature801ZeroSlotsWorker(std::uint32_t target_ea) {
     std::uintptr_t slots = 0;
     if (!resolvePointerChain(kFeature801ZeroSlotsChain, 3, &slots)) {
         logWarn(
-            "feature 801 zero-slots resolve failed target=0x%X chain=unk_3640D0 worker=sub_1876A0",
+            "feature 801 zero-slots resolve failed target=0x%X chain=unk_36E0D0 worker=sub_18CF44",
             target_ea);
         g_feature_801_zero_slots_enabled.store(false);
         return;
@@ -8190,7 +8345,7 @@ void runFeature801ZeroSlotsWorker(std::uint32_t target_ea) {
         ++loops;
         if ((loops & 0x3F) == 1) {
             logInfo(
-                "feature 801 zero-slots worker loop target=0x%X base=0x%llX written=%zu/0x200 chain=unk_3640D0",
+                "feature 801 zero-slots worker loop target=0x%X base=0x%llX written=%zu/0x200 chain=unk_36E0D0",
                 target_ea,
                 static_cast<unsigned long long>(slots),
                 written);
@@ -8198,7 +8353,7 @@ void runFeature801ZeroSlotsWorker(std::uint32_t target_ea) {
     }
 
     logInfo(
-        "feature 801 zero-slots worker stopped target=0x%X base=0x%llX loops=%zu worker=sub_1876A0",
+        "feature 801 zero-slots worker stopped target=0x%X base=0x%llX loops=%zu worker=sub_18CF44",
         target_ea,
         static_cast<unsigned long long>(slots),
         loops);
@@ -8212,7 +8367,7 @@ bool applyFeature801ZeroSlots(const ChangeRequest &request, std::uint32_t target
     g_feature_801_zero_slots_enabled.store(request.bool_value);
     if (!g_feature_801_gate.exchange(true)) {
         logInfo(
-            "feature 801 zero-slots gate initialized target=0x%X state_byte=0x38553C gate_byte=0x385708 enabled=%d",
+            "feature 801 zero-slots gate initialized target=0x%X state_byte=0x390484 gate_byte=0x3906A8 enabled=%d",
             target_ea,
             request.bool_value ? 1 : 0);
         return true;
@@ -8220,7 +8375,7 @@ bool applyFeature801ZeroSlots(const ChangeRequest &request, std::uint32_t target
 
     if (!request.bool_value) {
         logInfo(
-            "feature 801 zero-slots disabled target=0x%X state_byte=0x38553C gate_byte=0x385708 worker=sub_1876A0",
+            "feature 801 zero-slots disabled target=0x%X state_byte=0x390484 gate_byte=0x3906A8 worker=sub_18CF44",
             target_ea);
         return true;
     }
@@ -8229,7 +8384,7 @@ bool applyFeature801ZeroSlots(const ChangeRequest &request, std::uint32_t target
         runFeature801ZeroSlotsWorker(target_ea);
     }).detach();
     logInfo(
-        "feature 801 zero-slots enabled target=0x%X worker=sub_1876A0 state_byte=0x38553C gate_byte=0x385708 chain=unk_3640D0 stride=8 count=0x200",
+        "feature 801 zero-slots enabled target=0x%X worker=sub_18CF44 state_byte=0x390484 gate_byte=0x3906A8 chain=unk_36E0D0 stride=8 count=0x200",
         target_ea);
     return true;
 }
@@ -8238,7 +8393,7 @@ void runFeature802WardrobeFlagWorker(std::uint32_t target_ea) {
     std::uintptr_t flag = 0;
     if (!resolvePointerChain(kFeature802WardrobeFlagChain, 3, &flag)) {
         logWarn(
-            "feature 802 wardrobe flag resolve failed target=0x%X chain=unk_364050 worker=sub_18771C",
+            "feature 802 wardrobe flag resolve failed target=0x%X chain=unk_36E050 worker=sub_18CFC0",
             target_ea);
         g_feature_802_wardrobe_flag_enabled.store(false);
         return;
@@ -8252,7 +8407,7 @@ void runFeature802WardrobeFlagWorker(std::uint32_t target_ea) {
     }
     const bool clear_ok = writeOriginalProcTypedInt(flag, 0, 4);
     logInfo(
-        "feature 802 wardrobe flag worker stopped target=0x%X address=0x%llX writes=%zu clear_ok=%d worker=sub_18771C",
+        "feature 802 wardrobe flag worker stopped target=0x%X address=0x%llX writes=%zu clear_ok=%d worker=sub_18CFC0",
         target_ea,
         static_cast<unsigned long long>(flag),
         writes,
@@ -8267,7 +8422,7 @@ bool applyFeature802WardrobeFlag(const ChangeRequest &request, std::uint32_t tar
     g_feature_802_wardrobe_flag_enabled.store(request.bool_value);
     if (!g_feature_802_gate.exchange(true)) {
         logInfo(
-            "feature 802 wardrobe flag gate initialized target=0x%X state_byte=0x385540 gate_byte=0x385709 enabled=%d",
+            "feature 802 wardrobe flag gate initialized target=0x%X state_byte=0x390488 gate_byte=0x3906A9 enabled=%d",
             target_ea,
             request.bool_value ? 1 : 0);
         return true;
@@ -8275,7 +8430,7 @@ bool applyFeature802WardrobeFlag(const ChangeRequest &request, std::uint32_t tar
 
     if (!request.bool_value) {
         logInfo(
-            "feature 802 wardrobe flag disabled target=0x%X state_byte=0x385540 gate_byte=0x385709 worker=sub_18771C",
+            "feature 802 wardrobe flag disabled target=0x%X state_byte=0x390488 gate_byte=0x3906A9 worker=sub_18CFC0",
             target_ea);
         return true;
     }
@@ -8284,7 +8439,7 @@ bool applyFeature802WardrobeFlag(const ChangeRequest &request, std::uint32_t tar
         runFeature802WardrobeFlagWorker(target_ea);
     }).detach();
     logInfo(
-        "feature 802 wardrobe flag enabled target=0x%X worker=sub_18771C state_byte=0x385540 gate_byte=0x385709 chain=unk_364050 value=257 clear=0",
+        "feature 802 wardrobe flag enabled target=0x%X worker=sub_18CFC0 state_byte=0x390488 gate_byte=0x3906A9 chain=unk_36E050 value=257 clear=0",
         target_ea);
     return true;
 }
@@ -8374,25 +8529,25 @@ bool runDragonWorkerFeature(const ChangeRequest &request, std::uint32_t target_e
             enabled = &g_feature_401_dragon_enabled;
             gate = &g_feature_401_gate;
             worker = runFeature401DragonWorker;
-            state_ea = 0x385528;
-            gate_ea = 0x385701;
-            worker_ea = 0x186820;
+            state_ea = 0x390470;
+            gate_ea = 0x3906A1;
+            worker_ea = 0x18C0C4;
             break;
         case 402:
             enabled = &g_feature_402_dragon_enabled;
             gate = &g_feature_402_gate;
             worker = runFeature402DragonWorker;
-            state_ea = 0x38552C;
-            gate_ea = 0x385702;
-            worker_ea = 0x186978;
+            state_ea = 0x390474;
+            gate_ea = 0x3906A2;
+            worker_ea = 0x18C21C;
             break;
         case 403:
             enabled = &g_feature_403_dragon_enabled;
             gate = &g_feature_403_gate;
             worker = runFeature403DragonWorker;
-            state_ea = 0x385530;
-            gate_ea = 0x385703;
-            worker_ea = 0x186D10;
+            state_ea = 0x390478;
+            gate_ea = 0x3906A3;
+            worker_ea = 0x18C5B4;
             break;
         default:
             return false;
@@ -8412,7 +8567,7 @@ bool runDragonWorkerFeature(const ChangeRequest &request, std::uint32_t target_e
     }
 
     logInfo(
-        "feature %d dragon worker enabled=%d target=0x%X state_byte=0x%X gate_byte=0x%X worker=0x%X target_chain=qword_364170 source_chain=qword_364068 stride=0x%llX",
+        "feature %d dragon worker enabled=%d target=0x%X state_byte=0x%X gate_byte=0x%X worker=0x%X target_chain=qword_36E170 source_chain=qword_36E068 stride=0x%llX",
         request.feature_num,
         request.bool_value ? 1 : 0,
         target_ea,
@@ -8442,7 +8597,7 @@ void runFeature410SpeedWeightWorker(std::uint32_t target_ea) {
     std::uintptr_t address = 0;
     if (!resolvePointerChain(kFeature410SpeedWeightChain, 2, &address)) {
         logWarn(
-            "feature 410 speed weight chain resolve failed target=0x%X chain=[base+0x484B550]+0x28",
+            "feature 410 speed weight chain resolve failed target=0x%X chain=[base+0x0484C550]+0x28",
             target_ea);
         g_feature_410_speed_weight_enabled.store(false);
         return;
@@ -8479,7 +8634,7 @@ bool runFeature410SpeedWeight(JNIEnv *env, const ChangeRequest &request, std::ui
     if (!g_feature_410_gate.load()) {
         g_feature_410_gate.store(true);
         logInfo(
-            "feature 410 speed weight gate initialized target=0x%X state_byte=0x385538 gate_byte=0x385704 enabled=%d",
+            "feature 410 speed weight gate initialized target=0x%X state_byte=0x390480 gate_byte=0x3906A4 enabled=%d",
             target_ea,
             request.bool_value ? 1 : 0);
         return true;
@@ -8487,14 +8642,14 @@ bool runFeature410SpeedWeight(JNIEnv *env, const ChangeRequest &request, std::ui
 
     if (!request.bool_value) {
         logInfo(
-            "feature 410 speed weight enabled=0 target=0x%X state_byte=0x385538 gate_byte=0x385704",
+            "feature 410 speed weight enabled=0 target=0x%X state_byte=0x390480 gate_byte=0x3906A4",
             target_ea);
         return true;
     }
 
     showToast(env, request.context, u8"速度：0.01~1", true);
     logInfo(
-        "feature 410 speed weight enabled=1 target=0x%X state_byte=0x385538 gate_byte=0x385704 worker=0x1875A0 chain=[base+0x484B550]+0x28 range=-0.01..0.7",
+        "feature 410 speed weight enabled=1 target=0x%X state_byte=0x390480 gate_byte=0x3906A4 worker=0x18CE44 chain=[base+0x0484C550]+0x28 range=-0.01..0.7",
         target_ea);
     std::thread([target_ea]() {
         runFeature410SpeedWeightWorker(target_ea);
@@ -8541,10 +8696,10 @@ bool applyFeature411UiScale(const ChangeRequest &request, std::uint32_t target_e
         return true;
     }
 
-    const std::uintptr_t address = base + 0x006477C8;
+    const std::uintptr_t address = base + 0x00647908;
     const bool ok = writeOriginalProcType16Text(address, value);
     logInfo(
-        "feature 411 UI scale item=%d target=0x%X helper=0x%X module=%s qword_364578=0x6477C8 address=0x%llX value=%s ok=%d",
+        "feature 411 UI scale item=%d target=0x%X helper=0x%X module=%s qword_36E598=0x647908 address=0x%llX value=%s ok=%d",
         request.int_value,
         target_ea,
         helper_ea,
@@ -8562,7 +8717,7 @@ bool runFeature1009Worker(const ChangeRequest &request, std::uint32_t target_ea)
 
     g_feature_1009_enabled.store(request.bool_value);
     logInfo(
-        "feature 1009 face blink worker enabled=%d target=0x%X worker=0x18736C",
+        "feature 1009 face blink worker enabled=%d target=0x%X worker=0x18CC10 state_byte=0x390498 gate_byte=0x3906AA",
         request.bool_value ? 1 : 0,
         target_ea);
 
@@ -8595,7 +8750,7 @@ bool runFeature1012Worker(const ChangeRequest &request, std::uint32_t target_ea)
 
     g_feature_1012_enabled.store(request.bool_value);
     logInfo(
-        "feature 1012 AvatarSetArmorImm worker enabled=%d target=0x%X worker=0x1873CC state_byte=0x385554",
+        "feature 1012 AvatarSetArmorImm worker enabled=%d target=0x%X worker=0x18CC70 state_byte=0x39049C gate_byte=0x3906AB",
         request.bool_value ? 1 : 0,
         target_ea);
 
@@ -8633,13 +8788,13 @@ bool runFeature620Worker(const ChangeRequest &request, std::uint32_t target_ea) 
 
     g_feature_620_enabled.store(request.bool_value);
     logInfo(
-        "feature 620 random color enabled=%d target=0x%X state_byte=0x38554C gate_byte=0x385707 worker=0x1879A8",
+        "feature 620 random color enabled=%d target=0x%X state_byte=0x390494 gate_byte=0x3906A7 worker=0x18D24C",
         request.bool_value ? 1 : 0,
         target_ea);
 
     if (!g_feature_620_gate.load()) {
         g_feature_620_gate.store(true);
-        logInfo("feature 620 gate byte_385707 initialized from original off-path target=0x%X", target_ea);
+        logInfo("feature 620 gate byte_3906A7 initialized from original off-path target=0x%X", target_ea);
         return true;
     }
 
@@ -8658,20 +8813,20 @@ bool runFeature620Worker(const ChangeRequest &request, std::uint32_t target_ea) 
         while (g_feature_620_enabled.load()) {
             std::uintptr_t base = 0;
             if (resolveBootloaderBase(&base)) {
-                const std::uintptr_t address = base + 0x048D3E04;
-                writeFloatRaw(address, dist(rng));
-                writeFloatRaw(address + 4, dist(rng));
-                writeFloatRaw(address + 8, dist(rng));
+                const std::uintptr_t address = base + 0x048D4E44;
+                writeOriginalProcTypedInt(address, static_cast<int>(dist(rng)), 0x10);
+                writeOriginalProcTypedInt(address + 4, static_cast<int>(dist(rng)), 0x10);
+                writeOriginalProcTypedInt(address + 8, static_cast<int>(dist(rng)), 0x10);
             }
             std::this_thread::sleep_for(std::chrono::microseconds(15000000));
         }
 
         std::uintptr_t base = 0;
         if (resolveBootloaderBase(&base)) {
-            const std::uintptr_t address = base + 0x048D3E04;
-            writeFloatRaw(address, 1.0f);
-            writeFloatRaw(address + 4, 1.0f);
-            writeFloatRaw(address + 8, 1.0f);
+            const std::uintptr_t address = base + 0x048D4E44;
+            writeOriginalProcTypedInt(address, 1, 0x10);
+            writeOriginalProcTypedInt(address + 4, 1, 0x10);
+            writeOriginalProcTypedInt(address + 8, 1, 0x10);
         }
         g_feature_620_worker_running.store(false);
     }).detach();
@@ -8844,6 +8999,10 @@ void executeMemoryCase(JNIEnv *env, const ChangeRequest &request, std::uint32_t 
                 request.int_value,
                 value.c_str());
         }
+        return;
+    }
+
+    if (applyFeature15LiveStreamMode(env, request, target_ea)) {
         return;
     }
 
@@ -9231,6 +9390,15 @@ void dispatchChange(JNIEnv *env, const ChangeRequest &request) {
 
     if (isCardLoginButtonCase(request.feature_num)) {
         runLogin(env, request);
+        return;
+    }
+
+    if (request.feature_num == 10000) {
+        setFeature10000LightwingRouteEnabled(request.bool_value);
+        g_feature_920_921_candle_index.store(1);
+        logInfo(
+            "feature 10000 lightwing route state target=0x1C53B0 state_byte=0x390534 value=%d index_reset=1",
+            request.bool_value ? 1 : 0);
         return;
     }
 

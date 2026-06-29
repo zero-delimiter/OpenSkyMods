@@ -4,6 +4,7 @@
 #include "include/game_command.h"
 #include "include/game_memory_patch_table.h"
 #include "include/jni_helpers.h"
+#include "include/menu_state.h"
 #include "include/memory_tool.h"
 #include "include/text_codec.h"
 
@@ -58,7 +59,7 @@ constexpr const char *kContentTypeHeaderValue = "application/json";
 constexpr const char *kBootloaderModule = "libBootloader.so";
 constexpr const char *kSkyModsDirectory = "/storage/emulated/0/SkyMods";
 
-constexpr std::uintptr_t kGameApiChain0 = 0x0473D660;
+constexpr std::uintptr_t kGameApiChain0 = 0x0473E660;
 constexpr std::uintptr_t kGameApiSessionChain1 = 0x7EB8;
 constexpr std::uintptr_t kGameApiSessionFinal = 0x2005E8;
 constexpr std::uintptr_t kGameApiHeaderChain1 = 0x7ED0;
@@ -76,10 +77,10 @@ constexpr unsigned int kPatchCandleSpaceId = 0xD22C87DE;
 constexpr std::size_t kFastRouteBatchSize = 32;
 constexpr int kFastRoutePauseEveryRoutes = 15;
 constexpr std::size_t kFastRouteRouteNameBytes = 48;
-constexpr std::uintptr_t kFastRouteRouteNameChain0 = 0x0473D660;
+constexpr std::uintptr_t kFastRouteRouteNameChain0 = 0x0473E660;
 constexpr std::uintptr_t kFastRouteRouteNameChain1 = 0x7D78;
 constexpr std::uintptr_t kFastRouteRouteNameFinal = 0x398;
-constexpr std::uintptr_t kFastRouteLiveLevelChain0 = 0x0473D660;
+constexpr std::uintptr_t kFastRouteLiveLevelChain0 = 0x0473E660;
 constexpr std::uintptr_t kFastRouteLiveLevelChain1 = 0x8520;
 constexpr std::uintptr_t kFastRouteLiveLevelFinal = 0x630;
 
@@ -2038,7 +2039,7 @@ GameApiResult dropAllWingBuffs(const GameApiSession &session) {
     }
 
     logInfo(
-        "dropAllWingBuffs recovered sub_195B04 selector1->8 names=%zu ok=%d status=%d body_len=%zu",
+        "dropAllWingBuffs recovered sub_19B390 selector1->8 names=%zu ok=%d status=%d body_len=%zu",
         names.size(),
         drop.ok ? 1 : 0,
         drop.http_status,
@@ -2368,6 +2369,7 @@ GameApiResult runFastMapRoute(const GameApiSession &session) {
     int live_level_read_failures = 0;
     int submitted_batches = 0;
     std::size_t submitted_pickups = 0;
+    const bool lightwing_route_enabled = feature10000LightwingRouteEnabled();
 
     const Feature8013Route *routes = feature8013Routes();
     const std::size_t route_count = feature8013RouteCount();
@@ -2444,13 +2446,14 @@ GameApiResult runFastMapRoute(const GameApiSession &session) {
         }
     }
     logInfo(
-        "runFastMapRoute recovered completed routes=%zu batches=%d pickups=%zu failed=%d live_route_name_write_failures=%d live_level_read_failures=%d",
+        "runFastMapRoute recovered completed routes=%zu batches=%d pickups=%zu failed=%d live_route_name_write_failures=%d live_level_read_failures=%d lightwing_route=%d state_byte=0x390534",
         route_count,
         submitted_batches,
         submitted_pickups,
         failed_requests,
         live_route_name_write_failures,
-        live_level_read_failures);
+        live_level_read_failures,
+        lightwing_route_enabled ? 1 : 0);
     return last_result;
 }
 

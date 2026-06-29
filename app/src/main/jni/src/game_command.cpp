@@ -14,17 +14,17 @@ namespace android_mod {
 namespace {
 
 constexpr const char *kBootloaderModule = "libBootloader.so";
-constexpr std::uintptr_t kCommandHookSignatureOffset = 0x019AB9BC;
-constexpr std::uintptr_t kCommandHookPatchOffset = 0x02F9CA9C;
+constexpr std::uintptr_t kCommandHookSignatureOffset = 0x019AD02C;
+constexpr std::uintptr_t kCommandHookPatchOffset = 0x02F9E0EC;
 constexpr std::uintptr_t kCommandHookCodeOffset = kCommandHookPatchOffset + 0x15C;
 constexpr std::uintptr_t kCommandReadyOffset = 0x49F0000;
 constexpr std::uintptr_t kCommandPayloadOffset = 0x49F0008;
 constexpr std::uintptr_t kPointerMask = 0x00FFFFFFFFFFFFFFULL;
-constexpr std::uintptr_t kAvatarRootOffset = 0x0473D660;
+constexpr std::uintptr_t kAvatarRootOffset = 0x0473E660;
 constexpr std::uintptr_t kAvatarPositionSecondOffset = 0x7F18;
 constexpr std::uintptr_t kAvatarPositionThirdOffset = 0x1C68;
 constexpr std::uint32_t kCommandHookOriginalSignature = 0xA9BA7BFDu;
-constexpr std::uint32_t kCommandHookInstalledBranch = 0x1457C48Fu;
+constexpr std::uint32_t kCommandHookInstalledBranch = 0x1457C487u;
 constexpr std::uint32_t kCommandHookPatchSignature = 0xA9BD7BFDu;
 constexpr double kPortalYOffset = 1.2;
 constexpr double kPortalZOffset = 3.0;
